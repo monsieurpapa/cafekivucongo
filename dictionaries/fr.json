@@ -1,0 +1,338 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "equipment": "Équipement",
+    "specialties": "Spécialités",
+    "process": "Processus",
+    "partners": "Partenaires",
+    "testimonials": "Témoignages",
+    "pricing": "Tarifs",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transformez Votre Entreprise de Café",
+    "subtitle": "De la Fève à la Tasse: Services Professionnels de Transformation du Café",
+    "cta": "Découvrir Nos Services"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions Complètes de Transformation du Café",
+    "sourcing": {
+      "title": "Approvisionnement",
+      "description": "Nous vous connectons avec des fournisseurs de café premium du monde entier, garantissant qualité et durabilité."
+    },
+    "roasting": {
+      "title": "Torréfaction",
+      "description": "Nos experts torréfacteurs révèlent le profil de saveur unique de chaque variété de café avec précision et soin."
+    },
+    "storage": {
+      "title": "Entreposage",
+      "description": "Installations d'entreposage à climat contrôlé pour préserver la qualité et la fraîcheur de vos grains de café."
+    },
+    "hulling": {
+      "title": "Décorticage du Café Parche",
+      "description": "Élimination professionnelle de la couche de parchemin des grains de café pour les préparer à un traitement ultérieur."
+    },
+    "sorting": {
+      "title": "Tri Semi-Automatisé",
+      "description": "Machines avancées pour un tri efficace et précis des grains de café par taille, densité et qualité."
+    },
+    "packaging": {
+      "title": "Emballage",
+      "description": "Solutions d'emballage personnalisées qui préservent la fraîcheur et mettent en valeur l'identité de votre marque."
+    },
+    "export": {
+      "title": "Facilitation d'Exportation",
+      "description": "Support complet pour naviguer dans les réglementations commerciales internationales et la logistique pour les exportations de café."
+    },
+    "consulting": {
+      "title": "Conseil",
+      "description": "Orientation stratégique pour optimiser les opérations de votre entreprise de café et maximiser la rentabilité."
+    }
+  },
+  "equipment": {
+    "title": "Notre Équipement",
+    "subtitle": "Technologie de Traitement du Café à la Pointe",
+    "roasters": {
+      "title": "Torréfacteurs Industriels",
+      "description": "Machines de torréfaction à haute capacité pour la production commerciale."
+    },
+    "grinders": {
+      "title": "Moulins de Précision",
+      "description": "Mouture constante pour une extraction et une saveur optimales."
+    },
+    "hullers": {
+      "title": "Décortiqueuses de Café",
+      "description": "Machines efficaces pour enlever la couche de parchemin des grains de café."
+    },
+    "sorters": {
+      "title": "Machines de Tri",
+      "description": "Systèmes semi-automatisés pour un tri et un classement précis des grains de café."
+    },
+    "packaging": {
+      "title": "Systèmes d'Emballage",
+      "description": "Solutions automatisées pour un emballage efficace et précis."
+    },
+    "testing": {
+      "title": "Tests de Qualité",
+      "description": "Équipement avancé pour assurer une qualité constante."
+    }
+  },
+  "process": {
+    "title": "Notre Processus",
+    "subtitle": "Du Séchage à l'Exportation: Le Parcours de Transformation du Café",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "harvesting": {
+      "title": "Récolte",
+      "description": "Le voyage commence par une récolte soigneuse des cerises de café mûres. Nos partenaires sélectionnent uniquement les meilleures cerises, assurant un développement optimal de la saveur et de la qualité dès le début. Chaque cerise est cueillie à la main à maturité optimale pour garantir la meilleure base possible pour un café exceptionnel."
+    },
+    "drying": {
+      "title": "Séchage",
+      "description": "Les cerises de café fraîchement récoltées sont étalées sur des lits de séchage où elles sont régulièrement retournées pour assurer un séchage uniforme. Cette étape cruciale réduit la teneur en humidité à précisément 11-12% tout en préservant les saveurs intrinsèques des grains. Le processus prend généralement 15-21 jours selon les conditions climatiques."
+    },
+    "hulling": {
+      "title": "Décorticage",
+      "description": "Nos machines de décorticage spécialisées éliminent délicatement la couche de parchemin entourant les grains de café. Ce processus est soigneusement calibré pour éviter d'endommager les grains tout en éliminant efficacement la couche externe. Notre équipement peut traiter jusqu'à 2 tonnes de café par heure tout en maintenant des normes de qualité exceptionnelles."
+    },
+    "sorting": {
+      "title": "Tri",
+      "description": "À l'aide de machines de tri semi-automatisées, nous séparons les grains par taille, densité et couleur. Ce tri de précision assure la cohérence et élimine les grains défectueux qui pourraient affecter la qualité finale. Nos trieurs optiques peuvent détecter et éliminer jusqu'à 99,9% des grains défectueux, garantissant que seuls les meilleurs passent à l'étape suivante."
+    },
+    "grading": {
+      "title": "Contrôle Qualité",
+      "description": "Des contrôleurs qualité experts évaluent les grains selon les normes internationales. Chaque lot subit des tests rigoureux de teneur en humidité, de comptage des défauts et de qualité en tasse pour garantir que seuls les meilleurs grains progressent. Nos Q-graders évaluent chaque lot selon les protocoles de l'Association du Café de Spécialité pour attribuer des scores de qualité précis."
+    },
+    "packaging": {
+      "title": "Emballage",
+      "description": "Les grains classés sont soigneusement emballés dans des sacs spécialisés GrainPro ou en jute qui préservent la fraîcheur et protègent contre les facteurs environnementaux. Chaque emballage est étiqueté avec des informations détaillées sur l'origine, le grade, la méthode de traitement et le numéro de lot pour une traçabilité complète de la ferme à la tasse."
+    },
+    "export": {
+      "title": "Préparation à l'Exportation",
+      "description": "L'étape finale implique la préparation de toute la documentation nécessaire, l'organisation de la logistique et la garantie de conformité aux réglementations internationales. Nos services de facilitation d'exportation gèrent chaque détail pour un voyage sans heurts vers les marchés mondiaux, y compris le dédouanement, les arrangements d'expédition et toutes les certifications requises."
+    }
+  },
+  "specialties": {
+    "title": "Services Spécialisés",
+    "subtitle": "Solutions Sur Mesure pour les Entreprises de Café",
+    "specialty1": {
+      "title": "Profilage des Saveurs",
+      "description": "Développez des mélanges signature avec des caractéristiques gustatives distinctives."
+    },
+    "specialty2": {
+      "title": "Optimisation des Processus",
+      "description": "Rationalisez votre flux de production pour une efficacité maximale."
+    },
+    "specialty3": {
+      "title": "Analyse de Marché",
+      "description": "Obtenez des informations sur les préférences des consommateurs et les tendances du marché."
+    },
+    "specialty4": {
+      "title": "Développement de Marque",
+      "description": "Créez une identité de marque convaincante qui résonne avec les amateurs de café."
+    }
+  },
+  "partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "Collaboration avec les Meilleurs de l'Industrie du Café",
+    "fairtrade": {
+      "description": "Une organisation mondiale qui travaille pour garantir de meilleures conditions pour les agriculteurs et les travailleurs."
+    },
+    "flocert": {
+      "description": "Un organisme mondial de certification et de vérification, dont le rôle principal est de certifier indépendamment les produits Fairtrade."
+    },
+    "gcp": {
+      "description": "Une plateforme de durabilité inclusive multi-parties prenantes alignant les activités vers la création d'un secteur du café prospère et durable."
+    },
+    "afca": {
+      "description": "Une association régionale à but non lucratif, non politique, dirigée par ses membres, représentant les secteurs du café dans 11 pays."
+    },
+    "rainforest": {
+      "description": "Une organisation internationale à but non lucratif qui œuvre pour la conservation de la biodiversité et la garantie de moyens de subsistance durables."
+    },
+    "utz": {
+      "description": "Un programme de certification mondial pour le café responsable et d'autres produits."
+    }
+  },
+  "testimonials": {
+    "title": "Témoignages Clients",
+    "subtitle": "Ce Que Nos Clients Disent de Nous",
+    "testimonial1": {
+      "quote": "Travailler avec Cafe Kivu Congo a transformé notre petite torréfaction en une entreprise prospère. Leur expertise en matière de café et de stratégie commerciale est inégalée.",
+      "author": "Sarah Johnson",
+      "company": "Sunrise Coffee Co."
+    },
+    "testimonial2": {
+      "quote": "Les recommandations d'équipement et le support d'installation que nous avons reçus de Cafe Kivu Congo nous ont aidés à augmenter la production de 40% tout en améliorant la qualité.",
+      "author": "Michael Rodriguez",
+      "company": "Urban Brew"
+    },
+    "testimonial3": {
+      "quote": "Leurs connexions d'approvisionnement nous ont donné accès à des grains exceptionnels qui sont devenus la base de nos mélanges primés.",
+      "author": "Emma Chen",
+      "company": "Artisan Coffee Works"
+    }
+  },
+  "pricing": {
+    "title": "Plans Tarifaires",
+    "subtitle": "Solutions Flexibles pour Entreprises de Toutes Tailles",
+    "starter": {
+      "title": "Débutant",
+      "price": "1 500 €",
+      "period": "par mois",
+      "description": "Services essentiels pour petites entreprises de café",
+      "features": [
+        "Consultation de base",
+        "Recommandations d'équipement",
+        "Approvisionnement limité",
+        "Solutions d'emballage basiques"
+      ],
+      "cta": "Commencer"
+    },
+    "professional": {
+      "title": "Professionnel",
+      "price": "3 500 €",
+      "period": "par mois",
+      "description": "Services complets pour entreprises en croissance",
+      "features": [
+        "Consultation avancée",
+        "Options de location d'équipement",
+        "Approvisionnement premium",
+        "Design d'emballage personnalisé",
+        "Analyse de marché basique"
+      ],
+      "cta": "Choisir Professionnel"
+    },
+    "enterprise": {
+      "title": "Entreprise",
+      "price": "7 000 €",
+      "period": "par mois",
+      "description": "Solutions complètes pour opérations établies",
+      "features": [
+        "Partenariat stratégique",
+        "Configuration d'équipement sur mesure",
+        "Accès exclusif aux grains",
+        "Système d'emballage de marque",
+        "Analyse de marché complète",
+        "Gestionnaire de compte dédié"
+      ],
+      "cta": "Contacter les Ventes"
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Discutons de Vos Besoins en Transformation de Café",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "company": "Entreprise",
+    "message": "Message",
+    "submit": "Envoyer le Message",
+    "success": "Merci! Nous vous contacterons bientôt.",
+    "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
+  },
+  "footer": {
+    "about": "À Propos",
+    "services": "Services",
+    "blog": "Blog",
+    "careers": "Carrières",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "copyright": "© 2024 Cafe Kivu Congo. Tous droits réservés."
+  },
+  "accessibility": {
+    "themeToggle": "Basculer en mode sombre",
+    "scrollToTop": "Remonter en haut",
+    "menuToggle": "Basculer le menu"
+  },
+  "about": {
+    "title": "À Propos de Cafe Kivu Congo",
+    "subtitle": "Transformer l'industrie du café au Congo avec des pratiques durables et une qualité exceptionnelle",
+    "mission": {
+      "title": "Notre Mission",
+      "description": "Chez Cafe Kivu Congo, nous nous consacrons à transformer l'industrie du café au Congo grâce à des pratiques durables, des partenariats équitables et des normes de qualité exceptionnelles.",
+      "heading1": "Excellence de Qualité",
+      "content1": "Nous nous engageons à maintenir les plus hauts standards de qualité tout au long du processus de transformation du café, de la sélection des grains à l'exportation finale.",
+      "heading2": "Impact Mondial",
+      "content2": "Notre objectif est de positionner le café congolais sur la scène mondiale, créant des opportunités économiques pour les communautés locales tout en livrant des produits exceptionnels au monde entier.",
+      "heading3": "Avenir Durable",
+      "content3": "Nous croyons en des pratiques responsables qui protègent notre environnement, soutiennent nos agriculteurs et assurent la durabilité à long terme de l'industrie du café au Congo."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "subtitle": "Les principes qui guident tout ce que nous faisons chez Cafe Kivu Congo",
+      "quality": {
+        "title": "Qualité",
+        "description": "Nous sommes intransigeants dans notre engagement envers l'excellence à chaque étape du processus de transformation du café."
+      },
+      "integrity": {
+        "title": "Intégrité",
+        "description": "Nous menons nos affaires avec honnêteté, transparence et pratiques éthiques qui établissent la confiance avec toutes les parties prenantes."
+      },
+      "community": {
+        "title": "Communauté",
+        "description": "Nous valorisons le bien-être des communautés avec lesquelles nous travaillons et nous efforçons de créer un impact social positif."
+      },
+      "sustainability": {
+        "title": "Durabilité",
+        "description": "Nous mettons en œuvre des pratiques écologiquement responsables qui protègent les écosystèmes où notre café est cultivé."
+      },
+      "fairness": {
+        "title": "Équité",
+        "description": "Nous croyons en des relations équitables avec les agriculteurs et les partenaires, assurant une rémunération et un traitement justes."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Nous améliorons continuellement nos processus, compétences et connaissances pour offrir les meilleurs produits et services possibles."
+      }
+    },
+    "team": {
+      "title": "Notre Équipe",
+      "subtitle": "Rencontrez les professionnels passionnés derrière Cafe Kivu Congo",
+      "member1": {
+        "name": "Jean-Pierre Muhindo",
+        "role": "Fondateur & PDG",
+        "bio": "Avec plus de 20 ans d'expérience dans l'industrie du café, Jean-Pierre a fondé Cafe Kivu Congo avec la vision de transformer le secteur local du café."
+      },
+      "member2": {
+        "name": "Marie Kabila",
+        "role": "Directrice des Opérations",
+        "bio": "Marie supervise tous les aspects opérationnels de notre entreprise, assurant l'efficacité et la qualité à chaque étape du processus de transformation."
+      },
+      "member3": {
+        "name": "Emmanuel Nkunda",
+        "role": "Responsable du Contrôle Qualité",
+        "bio": "Certifié Q Grader, Emmanuel dirige notre équipe de contrôle qualité avec son palais exceptionnel et son attention aux détails."
+      },
+      "member4": {
+        "name": "Sophie Mutombo",
+        "role": "Directrice de la Durabilité",
+        "bio": "Sophie développe et met en œuvre nos initiatives de durabilité, travaillant en étroite collaboration avec les agriculteurs pour promouvoir des pratiques respectueuses de l'environnement."
+      }
+    }
+  },
+  "partners": {
+    "title": "Avec Qui Nous Travaillons",
+    "subtitle": "Nos partenaires de confiance dans l'industrie mondiale du café",
+    "fairtrade": {
+      "description": "Une organisation mondiale qui travaille pour garantir de meilleures conditions pour les agriculteurs et les travailleurs."
+    },
+    "flocert": {
+      "description": "Un organisme mondial de certification et de vérification, dont le rôle principal est de certifier indépendamment les produits Fairtrade."
+    },
+    "gcp": {
+      "description": "Une plateforme de durabilité inclusive multi-parties prenantes alignant les activités vers la création d'un secteur du café prospère et durable."
+    },
+    "afca": {
+      "description": "Une association régionale à but non lucratif, non politique, dirigée par ses membres, représentant les secteurs du café dans 11 pays."
+    },
+    "rainforest": {
+      "description": "Une organisation internationale à but non lucratif qui œuvre pour la conservation de la biodiversité et la garantie de moyens de subsistance durables."
+    },
+    "utz": {
+      "description": "Un programme de certification mondial pour le café responsable et d'autres produits."
+    }
+  }
+}

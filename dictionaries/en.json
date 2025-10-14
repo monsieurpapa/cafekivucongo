@@ -1,0 +1,316 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "equipment": "Equipment",
+    "specialties": "Specialties",
+    "process": "Process",
+    "partners": "Partners",
+    "testimonials": "Testimonials",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transform Your Coffee Business",
+    "subtitle": "From Bean to Cup: Professional Coffee Transformation Services",
+    "cta": "Discover Our Services"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Coffee Transformation Solutions",
+    "sourcing": {
+      "title": "Bean Sourcing",
+      "description": "We connect you with premium coffee bean suppliers from around the world, ensuring quality and sustainability."
+    },
+    "roasting": {
+      "title": "Roasting",
+      "description": "Our expert roasters bring out the unique flavor profile of each bean variety with precision and care."
+    },
+    "storage": {
+      "title": "Storage",
+      "description": "Climate-controlled warehousing facilities to preserve the quality and freshness of your coffee beans."
+    },
+    "hulling": {
+      "title": "Parchment Coffee Hulling",
+      "description": "Professional removal of the parchment layer from coffee beans to prepare them for further processing."
+    },
+    "sorting": {
+      "title": "Semi-Automated Sorting",
+      "description": "Advanced machinery for efficient and precise sorting of coffee beans by size, density, and quality."
+    },
+    "packaging": {
+      "title": "Packaging",
+      "description": "Custom packaging solutions that preserve freshness and showcase your brand identity."
+    },
+    "export": {
+      "title": "Export Facilitation",
+      "description": "Comprehensive support for navigating international trade regulations and logistics for coffee exports."
+    },
+    "consulting": {
+      "title": "Consulting",
+      "description": "Strategic guidance to optimize your coffee business operations and maximize profitability."
+    }
+  },
+  "equipment": {
+    "title": "Our Equipment",
+    "subtitle": "State-of-the-Art Coffee Processing Technology",
+    "roasters": {
+      "title": "Industrial Roasters",
+      "description": "High-capacity roasting machines for commercial production."
+    },
+    "grinders": {
+      "title": "Precision Grinders",
+      "description": "Consistent grinding for optimal extraction and flavor."
+    },
+    "hullers": {
+      "title": "Coffee Hullers",
+      "description": "Efficient machinery for removing the parchment layer from coffee beans."
+    },
+    "sorters": {
+      "title": "Sorting Machines",
+      "description": "Semi-automated systems for precise coffee bean sorting and grading."
+    },
+    "packaging": {
+      "title": "Packaging Systems",
+      "description": "Automated solutions for efficient and precise packaging."
+    },
+    "testing": {
+      "title": "Quality Testing",
+      "description": "Advanced equipment for ensuring consistent quality."
+    }
+  },
+  "process": {
+    "title": "Our Process",
+    "subtitle": "From Drying to Export: The Journey of Coffee Transformation",
+    "previous": "Previous",
+    "next": "Next",
+    "harvesting": {
+      "title": "Harvesting",
+      "description": "The journey begins with careful harvesting of ripe coffee cherries. Our partners select only the finest cherries, ensuring optimal flavor development and quality from the very start. Each cherry is hand-picked at peak ripeness to guarantee the best possible foundation for exceptional coffee."
+    },
+    "drying": {
+      "title": "Drying",
+      "description": "Freshly harvested coffee cherries are spread on drying beds where they're regularly turned to ensure even drying. This crucial step reduces moisture content to precisely 11-12% while preserving the beans' intrinsic flavors. The process typically takes 15-21 days depending on climate conditions."
+    },
+    "hulling": {
+      "title": "Hulling",
+      "description": "Our specialized hulling machines gently remove the parchment layer surrounding the coffee beans. This process is carefully calibrated to prevent damage to the beans while efficiently removing the outer layer. Our equipment can process up to 2 tons of coffee per hour while maintaining exceptional quality standards."
+    },
+    "sorting": {
+      "title": "Sorting",
+      "description": "Using semi-automated sorting machines, we separate beans by size, density, and color. This precision sorting ensures consistency and removes any defective beans that could affect the final quality. Our optical sorters can detect and remove up to 99.9% of defective beans, ensuring only the finest make it to the next stage."
+    },
+    "grading": {
+      "title": "Quality Control",
+      "description": "Expert quality controllers assess the beans based on international standards. Each batch undergoes rigorous testing for moisture content, defect count, and cup quality to ensure only the finest beans proceed. Our Q-graders evaluate every lot using the Specialty Coffee Association protocols to assign accurate quality scores."
+    },
+    "packaging": {
+      "title": "Packaging",
+      "description": "The graded beans are carefully packaged in specialized GrainPro or jute bags that preserve freshness and protect against environmental factors. Each package is labeled with detailed information about origin, grade, processing method, and lot number for complete traceability from farm to cup."
+    },
+    "export": {
+      "title": "Export Preparation",
+      "description": "The final step involves preparing all necessary documentation, arranging logistics, and ensuring compliance with international regulations. Our export facilitation services handle every detail for a smooth journey to global markets, including customs clearance, shipping arrangements, and all required certifications."
+    }
+  },
+  "specialties": {
+    "title": "Specialized Services",
+    "subtitle": "Tailored Solutions for Coffee Businesses",
+    "specialty1": {
+      "title": "Flavor Profiling",
+      "description": "Develop signature blends with distinctive taste characteristics."
+    },
+    "specialty2": {
+      "title": "Process Optimization",
+      "description": "Streamline your production workflow for maximum efficiency."
+    },
+    "specialty3": {
+      "title": "Market Analysis",
+      "description": "Gain insights into consumer preferences and market trends."
+    },
+    "specialty4": {
+      "title": "Brand Development",
+      "description": "Create a compelling brand identity that resonates with coffee enthusiasts."
+    }
+  },
+  "partners": {
+    "title": "Who We Work With",
+    "subtitle": "Our trusted partners in the global coffee industry",
+    "fairtrade": {
+      "description": "A global organization working to secure a better deal for farmers and workers."
+    },
+    "flocert": {
+      "description": "A global certification and verification body, with the main role of independently certifying Fairtrade products."
+    },
+    "gcp": {
+      "description": "An inclusive multi-stakeholder sustainability platform aligning the activities towards creating a thriving and sustainable coffee sector."
+    },
+    "afca": {
+      "description": "A regional non profit, non political, member-driven association representing coffee sectors in 11 countries."
+    },
+    "rainforest": {
+      "description": "An international nonprofit organization that works to conserve biodiversity and ensure sustainable livelihoods."
+    },
+    "utz": {
+      "description": "A worldwide certification program for responsible coffee and other products."
+    }
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "What Our Clients Say About Us",
+    "testimonial1": {
+      "quote": "Working with Cafe Kivu Congo transformed our small roastery into a thriving business. Their expertise in both coffee and business strategy is unmatched.",
+      "author": "Sarah Johnson",
+      "company": "Sunrise Coffee Co."
+    },
+    "testimonial2": {
+      "quote": "The equipment recommendations and setup support we received from Cafe Kivu Congo helped us increase production by 40% while improving quality.",
+      "author": "Michael Rodriguez",
+      "company": "Urban Brew"
+    },
+    "testimonial3": {
+      "quote": "Their sourcing connections gave us access to exceptional beans that have become the foundation of our award-winning blends.",
+      "author": "Emma Chen",
+      "company": "Artisan Coffee Works"
+    }
+  },
+  "pricing": {
+    "title": "Pricing Plans",
+    "subtitle": "Flexible Solutions for Businesses of All Sizes",
+    "starter": {
+      "title": "Starter",
+      "price": "$1,500",
+      "period": "per month",
+      "description": "Essential services for small coffee businesses",
+      "features": [
+        "Basic consultation",
+        "Equipment recommendations",
+        "Limited bean sourcing",
+        "Basic packaging solutions"
+      ],
+      "cta": "Get Started"
+    },
+    "professional": {
+      "title": "Professional",
+      "price": "$3,500",
+      "period": "per month",
+      "description": "Comprehensive services for growing businesses",
+      "features": [
+        "Advanced consultation",
+        "Equipment leasing options",
+        "Premium bean sourcing",
+        "Custom packaging design",
+        "Basic market analysis"
+      ],
+      "cta": "Choose Professional"
+    },
+    "enterprise": {
+      "title": "Enterprise",
+      "price": "$7,000",
+      "period": "per month",
+      "description": "Full-service solutions for established operations",
+      "features": [
+        "Strategic partnership",
+        "Custom equipment configuration",
+        "Exclusive bean access",
+        "Branded packaging system",
+        "Comprehensive market analysis",
+        "Dedicated account manager"
+      ],
+      "cta": "Contact Sales"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Let's Discuss Your Coffee Transformation Needs",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Thank you! We'll be in touch soon.",
+    "error": "There was an error sending your message. Please try again."
+  },
+  "footer": {
+    "about": "About Us",
+    "services": "Services",
+    "blog": "Blog",
+    "careers": "Careers",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2024 Cafe Kivu Congo. All rights reserved."
+  },
+  "accessibility": {
+    "themeToggle": "Toggle dark mode",
+    "scrollToTop": "Scroll to top",
+    "menuToggle": "Toggle menu"
+  },
+  "about": {
+    "title": "About Cafe Kivu Congo",
+    "subtitle": "Transforming the coffee industry in Congo with sustainable practices and exceptional quality",
+    "mission": {
+      "title": "Our Mission",
+      "description": "At Cafe Kivu Congo, we're dedicated to transforming the coffee industry in Congo through sustainable practices, fair partnerships, and exceptional quality standards.",
+      "heading1": "Quality Excellence",
+      "content1": "We are committed to maintaining the highest standards of quality throughout the entire coffee transformation process, from bean selection to final export.",
+      "heading2": "Global Impact",
+      "content2": "Our goal is to position Congolese coffee on the global stage, creating economic opportunities for local communities while delivering exceptional products to the world.",
+      "heading3": "Sustainable Future",
+      "content3": "We believe in responsible practices that protect our environment, support our farmers, and ensure the long-term sustainability of the coffee industry in Congo."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The principles that guide everything we do at Cafe Kivu Congo",
+      "quality": {
+        "title": "Quality",
+        "description": "We are uncompromising in our commitment to excellence at every stage of the coffee transformation process."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "We conduct our business with honesty, transparency, and ethical practices that build trust with all stakeholders."
+      },
+      "community": {
+        "title": "Community",
+        "description": "We value the well-being of the communities we work with and strive to create positive social impact."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "We implement environmentally responsible practices that protect the ecosystems where our coffee is grown."
+      },
+      "fairness": {
+        "title": "Fairness",
+        "description": "We believe in equitable relationships with farmers and partners, ensuring fair compensation and treatment."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We continuously improve our processes, skills, and knowledge to deliver the best possible products and services."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Meet the passionate professionals behind Cafe Kivu Congo",
+      "member1": {
+        "name": "Jean-Pierre Muhindo",
+        "role": "Founder & CEO",
+        "bio": "With over 20 years of experience in the coffee industry, Jean-Pierre founded Cafe Kivu Congo with a vision to transform the local coffee sector."
+      },
+      "member2": {
+        "name": "Marie Kabila",
+        "role": "Head of Operations",
+        "bio": "Marie oversees all operational aspects of our business, ensuring efficiency and quality at every stage of the transformation process."
+      },
+      "member3": {
+        "name": "Emmanuel Nkunda",
+        "role": "Quality Control Manager",
+        "bio": "A certified Q Grader, Emmanuel leads our quality control team with his exceptional palate and attention to detail."
+      },
+      "member4": {
+        "name": "Sophie Mutombo",
+        "role": "Sustainability Director",
+        "bio": "Sophie develops and implements our sustainability initiatives, working closely with farmers to promote environmentally friendly practices."
+      }
+    }
+  }
+}
