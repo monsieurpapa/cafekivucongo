@@ -31,8 +31,9 @@ export default function SpecialtiesSection({ dict }: { dict: any }) {
   ]
 
   return (
-    <section id="specialties" className="py-16 md:py-24 bg-coffee-100 dark:bg-coffee-900/50">
-      <div className="container">
+    <section id="specialties" className="py-16 md:py-24 section-brown-light coffee-pattern relative overflow-hidden">
+      <div className="natural-texture absolute inset-0"></div>
+      <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +62,7 @@ export default function SpecialtiesSection({ dict }: { dict: any }) {
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              <Card className="border-coffee-200 hover:border-coffee-400 dark:border-coffee-700 dark:hover:border-coffee-500 transition-all duration-300 h-full hover:shadow-lg bg-white dark:bg-coffee-800">
+              <Card className="border-bean-light/30 hover:border-accent-caramel/50 dark:border-bean-dark/30 dark:hover:border-accent-caramel/40 transition-all duration-300 h-full hover:shadow-lg glass-effect organic-shadow">
                 <CardHeader className="pb-2">
                   <div className="mb-2">{item.icon}</div>
                   <CardTitle className="text-coffee-900 dark:text-coffee-50">{item.title}</CardTitle>

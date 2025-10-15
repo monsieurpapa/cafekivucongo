@@ -24,6 +24,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
     "process",
     "specialties",
     "partners",
+    "investment",
     "testimonials",
     "pricing",
     "contact",
@@ -62,10 +63,10 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={cn(
-        "sticky top-0 z-50 w-full border-b backdrop-blur-lg transition-all duration-300",
+        "sticky top-0 z-50 w-full border-b transition-all duration-300",
         scrolled
-          ? "bg-white/95 dark:bg-coffee-900/95 shadow-lg border-coffee-200 dark:border-coffee-700"
-          : "bg-white/80 dark:bg-coffee-900/80 border-coffee-100 dark:border-coffee-800",
+          ? "glass-effect organic-shadow border-bean-light/30 dark:border-bean-dark/30"
+          : "bg-coffee-50/80 dark:bg-coffee-950/80 backdrop-blur-sm border-bean-light/20 dark:border-bean-dark/20",
       )}
     >
       <div className="container flex h-20 items-center justify-between">
@@ -82,7 +83,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
           </Link>
         </div>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           <Link
             href={`/${lang}#home`}
             onClick={(e) => scrollToSection(e, "home")}
@@ -90,6 +91,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
               "text-base font-medium tracking-wide transition-colors hover:text-coffee-700 dark:hover:text-coffee-300 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-caramel focus-visible:ring-offset-2 rounded-md px-1 text-coffee-600 dark:text-coffee-400",
               mounted && activeSection === "home" && "text-coffee-900 dark:text-coffee-50 font-semibold",
             )}
+            aria-current={mounted && activeSection === "home" ? "page" : undefined}
           >
             {navigation.home}
             {mounted && activeSection === "home" && (
@@ -103,6 +105,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
               "text-base font-medium tracking-wide transition-colors hover:text-coffee-700 dark:hover:text-coffee-300 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-caramel focus-visible:ring-offset-2 rounded-md px-1 text-coffee-600 dark:text-coffee-400",
               pathname.includes(`/${lang}/about`) && "text-coffee-900 dark:text-coffee-50 font-semibold",
             )}
+            aria-current={pathname.includes(`/${lang}/about`) ? "page" : undefined}
           >
             {navigation.about}
             {pathname.includes(`/${lang}/about`) && (
@@ -132,6 +135,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
                       activeSection === "services" &&
                       "text-coffee-900 dark:text-coffee-50 font-semibold bg-coffee-100 dark:bg-coffee-700",
                   )}
+                  aria-current={mounted && activeSection === "services" ? "page" : undefined}
                 >
                   {navigation.services}
                 </Link>
@@ -146,6 +150,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
                       activeSection === "equipment" &&
                       "text-coffee-900 dark:text-coffee-50 font-semibold bg-coffee-100 dark:bg-coffee-700",
                   )}
+                  aria-current={mounted && activeSection === "equipment" ? "page" : undefined}
                 >
                   {navigation.equipment}
                 </Link>
@@ -160,6 +165,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
                       activeSection === "specialties" &&
                       "text-coffee-900 dark:text-coffee-50 font-semibold bg-coffee-100 dark:bg-coffee-700",
                   )}
+                  aria-current={mounted && activeSection === "specialties" ? "page" : undefined}
                 >
                   {navigation.specialties}
                 </Link>
@@ -174,6 +180,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
               "text-base font-medium tracking-wide transition-colors hover:text-coffee-700 dark:hover:text-coffee-300 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-caramel focus-visible:ring-offset-2 rounded-md px-1 text-coffee-600 dark:text-coffee-400",
               mounted && activeSection === "process" && "text-coffee-900 dark:text-coffee-50 font-semibold",
             )}
+            aria-current={mounted && activeSection === "process" ? "page" : undefined}
           >
             {navigation.process}
             {mounted && activeSection === "process" && (
@@ -203,6 +210,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
                       activeSection === "partners" &&
                       "text-coffee-900 dark:text-coffee-50 font-semibold bg-coffee-100 dark:bg-coffee-700",
                   )}
+                  aria-current={mounted && activeSection === "partners" ? "page" : undefined}
                 >
                   {navigation.partners}
                 </Link>
@@ -217,6 +225,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
                       activeSection === "testimonials" &&
                       "text-coffee-900 dark:text-coffee-50 font-semibold bg-coffee-100 dark:bg-coffee-700",
                   )}
+                  aria-current={mounted && activeSection === "testimonials" ? "page" : undefined}
                 >
                   {navigation.testimonials}
                 </Link>
@@ -225,12 +234,28 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
           </DropdownMenu>
 
           <Link
+            href={`/${lang}#investment`}
+            onClick={(e) => scrollToSection(e, "investment")}
+            className={cn(
+              "text-base font-medium tracking-wide transition-colors hover:text-coffee-700 dark:hover:text-coffee-300 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-caramel focus-visible:ring-offset-2 rounded-md px-1 text-coffee-600 dark:text-coffee-400",
+              mounted && activeSection === "investment" && "text-coffee-900 dark:text-coffee-50 font-semibold",
+            )}
+            aria-current={mounted && activeSection === "investment" ? "page" : undefined}
+          >
+            Investment
+            {mounted && activeSection === "investment" && (
+              <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent-caramel rounded-full"></span>
+            )}
+          </Link>
+
+          <Link
             href={`/${lang}#pricing`}
             onClick={(e) => scrollToSection(e, "pricing")}
             className={cn(
               "text-base font-medium tracking-wide transition-colors hover:text-coffee-700 dark:hover:text-coffee-300 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-caramel focus-visible:ring-offset-2 rounded-md px-1 text-coffee-600 dark:text-coffee-400",
               mounted && activeSection === "pricing" && "text-coffee-900 dark:text-coffee-50 font-semibold",
             )}
+            aria-current={mounted && activeSection === "pricing" ? "page" : undefined}
           >
             {navigation.pricing}
             {mounted && activeSection === "pricing" && (
@@ -245,6 +270,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
               "text-base font-medium tracking-wide transition-colors hover:text-coffee-700 dark:hover:text-coffee-300 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-caramel focus-visible:ring-offset-2 rounded-md px-1 text-coffee-600 dark:text-coffee-400",
               mounted && activeSection === "contact" && "text-coffee-900 dark:text-coffee-50 font-semibold",
             )}
+            aria-current={mounted && activeSection === "contact" ? "page" : undefined}
           >
             {navigation.contact}
             {mounted && activeSection === "contact" && (

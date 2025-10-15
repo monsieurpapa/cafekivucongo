@@ -6,6 +6,7 @@ import { supportedLanguages, defaultLanguage } from "@/middleware"
 import { Toaster } from "@/components/toaster"
 import { ThemeProvider } from "@/components/theme-provider"
 import ScrollToTop from "@/components/scroll-to-top"
+import SkipNav from "@/components/skip-nav"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -50,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang={lang} suppressHydrationWarning>
       <body className={`${inter.className} coffee-texture`}>
+        <SkipNav />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

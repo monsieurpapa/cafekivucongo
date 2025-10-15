@@ -32,6 +32,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
   const { process } = dict
   const [activeStep, setActiveStep] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(false)
+  const [announceMessage, setAnnounceMessage] = useState("")
   const touchStartX = useRef(0)
   const autoPlayIntervalRef = useRef<NodeJS.Timeout | null>(null)
   const [autoPlay, setAutoPlay] = useState(true)
@@ -81,7 +82,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
       title: process.packaging.title,
       description: process.packaging.description,
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7542DF3B-F941-4D50-84B4-EC891F3A162F.JPG-33jMlppf20WtSTZd0f7PEspXt8WU0z.jpeg",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7542DF3B-F941-4D50-84B4-EC891F3A162F.JPG-cGU3QJcEvc12BDAo1GuLMGgq9qfyk1.jpeg", // Updated packaging step image
       color: "bg-coffee-medium text-white",
     },
     {
@@ -100,8 +101,8 @@ export default function ProcessSection({ dict }: { dict: any }) {
 
       setIsTransitioning(true)
       setActiveStep(newStep)
+      setAnnounceMessage(`Now viewing step ${newStep + 1}: ${processSteps[newStep].title}`)
 
-      // Reset transition state after animation completes
       setTimeout(() => {
         setIsTransitioning(false)
       }, 400)
@@ -112,12 +113,12 @@ export default function ProcessSection({ dict }: { dict: any }) {
   const nextStep = useCallback(() => {
     const newStep = (activeStep + 1) % processSteps.length
     handleStepChange(newStep)
-  }, [activeStep, processSteps.length, handleStepChange])
+  }, [activeStep, handleStepChange])
 
   const prevStep = useCallback(() => {
     const newStep = (activeStep - 1 + processSteps.length) % processSteps.length
     handleStepChange(newStep)
-  }, [activeStep, processSteps.length, handleStepChange])
+  }, [activeStep, handleStepChange])
 
   const goToStep = useCallback(
     (index: number) => {
@@ -127,12 +128,13 @@ export default function ProcessSection({ dict }: { dict: any }) {
     [activeStep, handleStepChange],
   )
 
-  // Handle keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") {
+        e.preventDefault()
         nextStep()
       } else if (e.key === "ArrowLeft") {
+        e.preventDefault()
         prevStep()
       }
     }
@@ -143,7 +145,6 @@ export default function ProcessSection({ dict }: { dict: any }) {
     }
   }, [nextStep, prevStep])
 
-  // Handle autoplay
   useEffect(() => {
     if (autoPlay) {
       autoPlayIntervalRef.current = setInterval(() => {
@@ -158,7 +159,6 @@ export default function ProcessSection({ dict }: { dict: any }) {
     }
   }, [autoPlay, nextStep])
 
-  // Touch handlers for mobile swipe
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX
     setAutoPlay(false)
@@ -168,12 +168,11 @@ export default function ProcessSection({ dict }: { dict: any }) {
     const touchEndX = e.changedTouches[0].clientX
     const diff = touchStartX.current - touchEndX
 
-    // Swipe threshold
     if (Math.abs(diff) > 50) {
       if (diff > 0) {
-        nextStep() // Swipe left, go to next
+        nextStep()
       } else {
-        prevStep() // Swipe right, go to previous
+        prevStep()
       }
     }
   }
@@ -181,11 +180,19 @@ export default function ProcessSection({ dict }: { dict: any }) {
   return (
     <section
       id="process"
-      className="py-16 md:py-24 overflow-hidden bg-gradient-to-b from-green-pale/10 to-coffee-cream/10 dark:from-green-dark/10 dark:to-coffee-dark/10"
+      className="py-16 md:py-24 overflow-hidden section-green-light coffee-pattern relative"
       onMouseEnter={() => setAutoPlay(false)}
       onMouseLeave={() => setAutoPlay(true)}
+      aria-label="Coffee transformation process"
     >
-      <div className="container">
+      <div className="natural-texture absolute inset-0"></div>
+
+      {/* Screen reader announcements */}
+      <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+        {announceMessage}
+      </div>
+
+      <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -197,10 +204,13 @@ export default function ProcessSection({ dict }: { dict: any }) {
           <p className="text-bean-brown dark:text-bean-light text-lg max-w-2xl mx-auto">{process.subtitle}</p>
         </motion.div>
 
-        {/* Desktop Process Timeline (hidden on mobile) */}
-        <div className="hidden md:block mb-16">
+        {/* Desktop Process Timeline */}
+        <div className="hidden md:block mb-16" role="tablist" aria-label="Process steps">
           <div className="relative">
-            <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-green-medium via-bean-light to-coffee-dark -translate-y-1/2 rounded-full"></div>
+            <div
+              className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-green-medium via-bean-light to-coffee-dark -translate-y-1/2 rounded-full"
+              aria-hidden="true"
+            ></div>
             <div className="flex justify-between relative">
               {processSteps.map((step, index) => (
                 <motion.div
@@ -213,14 +223,17 @@ export default function ProcessSection({ dict }: { dict: any }) {
                 >
                   <button
                     onClick={() => goToStep(index)}
+                    role="tab"
+                    aria-selected={activeStep === index}
+                    aria-controls={`process-panel-${index}`}
+                    id={`process-tab-${index}`}
                     className={cn(
                       "w-12 h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2",
                       activeStep === index
                         ? step.color + " scale-110 focus:ring-green-medium dark:focus:ring-green-light"
                         : "bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 focus:ring-gray-400 dark:focus:ring-gray-500",
                     )}
-                    aria-label={`Go to step ${index + 1}: ${step.title}`}
-                    aria-current={activeStep === index ? "step" : undefined}
+                    aria-label={`${step.title}. Step ${index + 1} of ${processSteps.length}`}
                   >
                     {step.icon}
                   </button>
@@ -240,7 +253,10 @@ export default function ProcessSection({ dict }: { dict: any }) {
                     </h4>
                   </div>
                   {index < processSteps.length - 1 && (
-                    <div className="absolute top-1/2 left-[calc(100%+0.5rem)] -translate-y-1/2 text-bean-brown dark:text-bean-light">
+                    <div
+                      className="absolute top-1/2 left-[calc(100%+0.5rem)] -translate-y-1/2 text-bean-brown dark:text-bean-light"
+                      aria-hidden="true"
+                    >
                       <ArrowRight className="h-4 w-4" />
                     </div>
                   )}
@@ -250,7 +266,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
           </div>
         </div>
 
-        {/* Mobile Process Steps (visible only on mobile) */}
+        {/* Mobile Process Steps */}
         <div className="md:hidden mb-8">
           <div className="flex justify-between items-center mb-4">
             <Button
@@ -258,16 +274,15 @@ export default function ProcessSection({ dict }: { dict: any }) {
               size="icon"
               onClick={prevStep}
               className="border-green-light dark:border-green-dark bg-transparent"
-              aria-label={process.previous}
+              aria-label={`${process.previous}. Go to step ${activeStep === 0 ? processSteps.length : activeStep}`}
               disabled={isTransitioning}
             >
               <ChevronLeft className="h-5 w-5 text-bean-dark dark:text-bean-cream" />
-              <span className="sr-only">{process.previous}</span>
             </Button>
 
-            <div className="text-center">
+            <div className="text-center" aria-live="polite" aria-atomic="true">
               <span className="text-sm text-bean-brown dark:text-bean-light">
-                {activeStep + 1} / {processSteps.length}
+                Step {activeStep + 1} of {processSteps.length}
               </span>
             </div>
 
@@ -276,11 +291,10 @@ export default function ProcessSection({ dict }: { dict: any }) {
               size="icon"
               onClick={nextStep}
               className="border-green-light dark:border-green-dark bg-transparent"
-              aria-label={process.next}
+              aria-label={`${process.next}. Go to step ${activeStep === processSteps.length - 1 ? 1 : activeStep + 2}`}
               disabled={isTransitioning}
             >
               <ChevronRight className="h-5 w-5 text-bean-dark dark:text-bean-cream" />
-              <span className="sr-only">{process.next}</span>
             </Button>
           </div>
 
@@ -288,17 +302,22 @@ export default function ProcessSection({ dict }: { dict: any }) {
             className="flex overflow-x-auto gap-2 pb-2 scrollbar-hide"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
+            role="tablist"
+            aria-label="Process steps"
           >
             {processSteps.map((step, index) => (
               <button
                 key={index}
+                role="tab"
+                aria-selected={activeStep === index}
+                aria-controls={`process-panel-${index}`}
+                id={`process-tab-mobile-${index}`}
                 className={cn(
                   "flex-shrink-0 flex flex-col items-center gap-1 cursor-pointer transition-all duration-300 px-2 focus:outline-none focus:ring-2 focus:ring-green-medium dark:focus:ring-green-light focus:ring-offset-2 rounded-md",
                   activeStep === index ? "opacity-100" : "opacity-50",
                 )}
                 onClick={() => goToStep(index)}
-                aria-label={`Go to step ${index + 1}: ${step.title}`}
-                aria-current={activeStep === index ? "step" : undefined}
+                aria-label={`${step.title}. Step ${index + 1} of ${processSteps.length}`}
               >
                 <div
                   className={cn(
@@ -326,10 +345,13 @@ export default function ProcessSection({ dict }: { dict: any }) {
               exit={{ opacity: 0, x: 20 }}
               transition={{ duration: 0.3 }}
               className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden order-2 md:order-1 shadow-md"
+              role="tabpanel"
+              id={`process-panel-${activeStep}`}
+              aria-labelledby={`process-tab-${activeStep}`}
             >
               <Image
                 src={processSteps[activeStep].image || "/placeholder.svg"}
-                alt={processSteps[activeStep].title}
+                alt={`${processSteps[activeStep].title}: ${processSteps[activeStep].description.substring(0, 100)}...`}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -360,6 +382,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
                     "w-12 h-12 rounded-full flex items-center justify-center",
                     processSteps[activeStep].color,
                   )}
+                  aria-hidden="true"
                 >
                   {processSteps[activeStep].icon}
                 </div>
@@ -371,12 +394,13 @@ export default function ProcessSection({ dict }: { dict: any }) {
                 {processSteps[activeStep].description}
               </p>
 
-              <div className="flex justify-between mt-8">
+              <nav className="flex justify-between mt-8" aria-label="Process navigation">
                 <Button
                   variant="outline"
                   onClick={prevStep}
                   className="border-green-light dark:border-green-dark hover:bg-green-pale/20 dark:hover:bg-green-dark/20 bg-transparent"
                   disabled={isTransitioning}
+                  aria-label={`${process.previous}. Go to ${processSteps[activeStep === 0 ? processSteps.length - 1 : activeStep - 1].title}`}
                 >
                   <ChevronLeft className="h-5 w-5 mr-2" />
                   {process.previous}
@@ -386,14 +410,15 @@ export default function ProcessSection({ dict }: { dict: any }) {
                   onClick={nextStep}
                   className="border-green-light dark:border-green-dark hover:bg-green-pale/20 dark:hover:bg-green-dark/20 bg-transparent"
                   disabled={isTransitioning}
+                  aria-label={`${process.next}. Go to ${processSteps[activeStep === processSteps.length - 1 ? 0 : activeStep + 1].title}`}
                 >
                   {process.next}
                   <ChevronRight className="h-5 w-5 ml-2" />
                 </Button>
-              </div>
+              </nav>
 
-              <div className="flex justify-center gap-1 mt-6">
-                {processSteps.map((_, index) => (
+              <div className="flex justify-center gap-1 mt-6" role="tablist" aria-label="Step indicators">
+                {processSteps.map((step, index) => (
                   <button
                     key={index}
                     className={cn(
@@ -401,8 +426,9 @@ export default function ProcessSection({ dict }: { dict: any }) {
                       activeStep === index ? "bg-green-dark dark:bg-green-medium w-4" : "bg-gray-300 dark:bg-gray-600",
                     )}
                     onClick={() => goToStep(index)}
-                    aria-label={`Go to step ${index + 1}`}
-                    aria-current={activeStep === index ? "step" : undefined}
+                    role="tab"
+                    aria-selected={activeStep === index}
+                    aria-label={`Go to ${step.title}`}
                   />
                 ))}
               </div>

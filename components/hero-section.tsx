@@ -86,8 +86,8 @@ export default function HeroSection({ lang, dict }: { lang: string; dict: any })
   }
 
   return (
-    <section id="home" className="relative py-20 md:py-28">
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-coffee-100 to-coffee-200 dark:from-coffee-900 dark:to-coffee-800 coffee-texture"></div>
+    <section id="home" className="relative py-20 md:py-28 overflow-hidden">
+      <div className="absolute inset-0 z-0 section-green-light coffee-pattern natural-texture"></div>
       <div className="container relative z-10">
         <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
           <motion.div
@@ -141,18 +141,23 @@ export default function HeroSection({ lang, dict }: { lang: string; dict: any })
               </motion.div>
             </AnimatePresence>
 
+            {/* Live region announcement for carousel changes */}
+            <div className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+              Showing image {currentImageIndex + 1} of {carouselImages.length}: {carouselImages[currentImageIndex].alt}
+            </div>
+
             {/* Navigation Arrows */}
             <button
               onClick={goToPrevious}
               className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/20 dark:bg-black/20 backdrop-blur-sm hover:bg-white/30 dark:hover:bg-black/30 text-white p-2 rounded-full transition-all duration-200 opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white"
-              aria-label="Previous image"
+              aria-label={`Previous image. Currently showing image ${currentImageIndex + 1} of ${carouselImages.length}`}
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
             <button
               onClick={goToNext}
               className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/20 dark:bg-black/20 backdrop-blur-sm hover:bg-white/30 dark:hover:bg-black/30 text-white p-2 rounded-full transition-all duration-200 opacity-0 group-hover:opacity-100 hover:opacity-100 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white"
-              aria-label="Next image"
+              aria-label={`Next image. Currently showing image ${currentImageIndex + 1} of ${carouselImages.length}`}
             >
               <ChevronRight className="h-6 w-6" />
             </button>

@@ -40,8 +40,9 @@ export default function AboutValues({ dict }: { dict: any }) {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-green-pale/10 dark:bg-green-dark/10">
-      <div className="container">
+    <section className="py-16 md:py-24 section-green-light coffee-pattern relative overflow-hidden">
+      <div className="natural-texture absolute inset-0"></div>
+      <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +64,7 @@ export default function AboutValues({ dict }: { dict: any }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+              className="glass-effect organic-shadow p-6 rounded-lg border border-bean-light/30 dark:border-bean-dark/30"
             >
               <div className="mb-4">{value.icon}</div>
               <h3 className="text-xl font-bold text-bean-dark dark:text-bean-cream mb-2">{value.title}</h3>

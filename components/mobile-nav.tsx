@@ -23,6 +23,7 @@ export default function MobileNav({ lang, dict }: { lang: string; dict: any }) {
     "process",
     "specialties",
     "partners",
+    "investment",
     "testimonials",
     "pricing",
     "contact",
@@ -209,6 +210,18 @@ export default function MobileNav({ lang, dict }: { lang: string; dict: any }) {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
+
+              <Link
+                href={`/${lang}#investment`}
+                className={cn(
+                  "text-lg font-medium py-2 px-3 rounded-md transition-colors hover:bg-gray-100 dark:hover:bg-gray-800",
+                  activeSection === "investment" &&
+                    "text-green-dark dark:text-green-light font-semibold bg-gray-100 dark:bg-gray-800",
+                )}
+                onClick={(e) => scrollToSection(e, "investment")}
+              >
+                Investment
+              </Link>
 
               <Link
                 href={`/${lang}#pricing`}

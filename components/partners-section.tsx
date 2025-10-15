@@ -82,8 +82,9 @@ export default function PartnersSection({ dict }: { dict: any }) {
   }, [isPaused])
 
   return (
-    <section id="partners" className="py-16 md:py-24 bg-coffee-50 dark:bg-coffee-900/50">
-      <div className="container">
+    <section id="partners" className="py-16 md:py-24 section-neutral coffee-pattern relative overflow-hidden">
+      <div className="natural-texture absolute inset-0"></div>
+      <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +110,7 @@ export default function PartnersSection({ dict }: { dict: any }) {
             {[...partnerItems, ...partnerItems].map((partner, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-[300px] bg-white dark:bg-coffee-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg border border-coffee-200 dark:border-coffee-700"
+                className="flex-shrink-0 w-[300px] glass-effect organic-shadow p-6 rounded-lg transition-all duration-300 hover:shadow-xl hover:organic-shadow-lg border border-bean-light/30 dark:border-bean-dark/30"
               >
                 <div className="flex justify-center mb-6 h-32 relative">
                   <Image

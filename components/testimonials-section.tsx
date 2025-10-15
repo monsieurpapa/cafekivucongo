@@ -30,8 +30,9 @@ export default function TestimonialsSection({ dict }: { dict: any }) {
   ]
 
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-coffee-100 dark:bg-coffee-900/50">
-      <div className="container">
+    <section id="testimonials" className="py-16 md:py-24 section-green-light coffee-pattern relative overflow-hidden">
+      <div className="natural-texture absolute inset-0"></div>
+      <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +61,7 @@ export default function TestimonialsSection({ dict }: { dict: any }) {
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              <Card className="border-coffee-200 hover:border-coffee-400 transition-all duration-300 dark:border-coffee-700 dark:hover:border-coffee-500 h-full bg-white dark:bg-coffee-800 hover:shadow-lg">
+              <Card className="border-bean-light/30 hover:border-accent-caramel/50 transition-all duration-300 dark:border-bean-dark/30 dark:hover:border-accent-caramel/40 h-full glass-effect organic-shadow hover:organic-shadow-lg">
                 <CardContent className="pt-6">
                   <Quote className="h-8 w-8 text-coffee-700 dark:text-coffee-300 mb-4" />
                   <p className="text-coffee-700 dark:text-coffee-200 italic">{item.quote}</p>

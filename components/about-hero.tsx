@@ -7,8 +7,8 @@ export default function AboutHero({ dict }: { dict: any }) {
   const { about } = dict
 
   return (
-    <section className="relative py-20 md:py-28">
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-green-pale/20 to-coffee-cream/20 dark:from-green-dark/20 dark:to-coffee-dark/20 coffee-texture"></div>
+    <section className="relative py-20 md:py-28 overflow-hidden">
+      <div className="absolute inset-0 z-0 section-green-light coffee-pattern natural-texture"></div>
       <div className="container relative z-10">
         <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
           <motion.div

@@ -41,8 +41,9 @@ export default function EquipmentSection({ dict }: { dict: any }) {
   ]
 
   return (
-    <section id="equipment" className="py-16 md:py-24 dark:bg-coffee-dark/10">
-      <div className="container">
+    <section id="equipment" className="py-16 md:py-24 section-brown-light coffee-pattern relative overflow-hidden">
+      <div className="natural-texture absolute inset-0"></div>
+      <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,14 +61,19 @@ export default function EquipmentSection({ dict }: { dict: any }) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="relative h-[400px] rounded-lg overflow-hidden order-2 md:order-1"
+            className="relative h-[400px] rounded-lg overflow-hidden order-2 md:order-1 organic-shadow"
           >
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20240625_154204-1Y4janR08nLpE1kZrftsGGeC84yHzd.jpg"
-              alt="Coffee processing facility and team"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2025-08-19-21-45-40-FtfymbftEBCYcaBldX0ISf1kRJuv6R.jpg"
+              alt="Cafe Kivu Congo coffee deparchment factory facility exterior"
               fill
               className="object-cover"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+            <div className="absolute bottom-4 left-4 right-4 text-white">
+              <h3 className="text-xl font-bold mb-1">Modern Processing Facility</h3>
+              <p className="text-sm opacity-90">Professional deparchment and quality control equipment</p>
+            </div>
           </motion.div>
 
           <motion.div

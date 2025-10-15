@@ -25,8 +25,9 @@ export default function Footer({ lang, dict }: { lang: string; dict: any }) {
   }
 
   return (
-    <footer className="bg-coffee-900 text-coffee-50 py-12 border-t border-coffee-800">
-      <div className="container">
+    <footer className="section-brown-light coffee-pattern relative py-12 border-t border-bean-light/30 dark:border-bean-dark/30">
+      <div className="natural-texture absolute inset-0"></div>
+      <div className="container relative z-10">
         <div className="grid gap-8 md:grid-cols-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -81,6 +82,14 @@ export default function Footer({ lang, dict }: { lang: string; dict: any }) {
                   className="text-coffee-300 hover:text-accent-caramel transition-colors text-sm"
                 >
                   {footer.about}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${lang}/accessibility`}
+                  className="text-coffee-300 hover:text-accent-caramel transition-colors text-sm"
+                >
+                  Accessibility
                 </Link>
               </li>
               <li>
