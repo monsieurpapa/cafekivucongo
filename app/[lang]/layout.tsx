@@ -12,24 +12,57 @@ const inter = Inter({ subsets: ["latin"] })
 
 export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   const lang = params?.lang || defaultLanguage
+  const isEnglish = lang === 'en'
 
   return {
-    title: "Cafe Kivu Congo - Coffee Transformation Services",
-    description: "Professional coffee transformation services for businesses of all sizes",
-    keywords: ["coffee", "transformation", "roasting", "packaging", "consulting", "Congo", "Kivu"],
-    authors: [{ name: "Cafe Kivu Congo" }],
+    metadataBase: new URL("https://cafekivucongo.vercel.app"),
+    title: isEnglish 
+      ? "Cafe Kivu Congo - Coffee Transformation Services"
+      : "Cafe Kivu Congo - Services de Transformation du Café",
+    description: isEnglish
+      ? "Professional coffee transformation services including bean sourcing, roasting, packaging, and consulting for businesses across the Democratic Republic of Congo and beyond."
+      : "Services professionnels de transformation du café incluant l'approvisionnement en grains, la torréfaction, l'emballage et le conseil pour les entreprises.",
+    keywords: isEnglish 
+      ? ["coffee transformation", "green coffee", "coffee roasting", "coffee packaging", "Congo", "Goma", "export"]
+      : ["transformation du café", "café vert", "torréfaction", "emballage", "Congo", "Goma", "export"],
+    authors: [{ name: "Cafe Kivu Congo", url: "https://cafekivucongo.vercel.app" }],
+    creator: "Cafe Kivu Congo",
+    robots: "index, follow",
+    viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0",
     openGraph: {
-      title: "Cafe Kivu Congo - Coffee Transformation Services",
-      description: "Professional coffee transformation services for businesses of all sizes",
+      title: isEnglish 
+        ? "Cafe Kivu Congo - Coffee Transformation Services"
+        : "Cafe Kivu Congo - Services de Transformation du Café",
+      description: isEnglish
+        ? "Professional coffee transformation services for businesses"
+        : "Services professionnels de transformation du café pour les entreprises",
       url: "https://cafekivucongo.vercel.app",
       siteName: "Cafe Kivu Congo",
-      locale: lang,
+      locale: lang === 'en' ? 'en_US' : 'fr_FR',
       type: "website",
+      images: [{
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Cafe Kivu Congo"
+      }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Cafe Kivu Congo - Coffee Transformation Services",
-      description: "Professional coffee transformation services for businesses of all sizes",
+      title: isEnglish 
+        ? "Cafe Kivu Congo - Coffee Transformation Services"
+        : "Cafe Kivu Congo - Services de Transformation du Café",
+      description: isEnglish
+        ? "Professional coffee transformation services"
+        : "Services professionnels de transformation du café",
+      creator: "@CafeKivuCongo",
+      images: ["/og-image.jpg"],
+    },
+    alternates: {
+      languages: {
+        'en': '/en',
+        'fr': '/fr',
+      },
     },
   }
 }
