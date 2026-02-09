@@ -43,7 +43,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
       title: process.harvesting.title,
       description: process.harvesting.description,
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/53612CA4-3C9D-490E-B4DB-8F77CFA720AF.JPG-15JodBGXRMsFi0dvYenpgJD7PybDs8.jpeg",
+        "/images/53612ca4-3c9d-490e-b4db.jpeg",
       color: "bg-green-medium text-white",
     },
     {
@@ -51,7 +51,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
       title: process.drying.title,
       description: process.drying.description,
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6687%20%281%29-UfuQMEAwbPUSneoKjfhqzHoM7a7Si4.jpg",
+        "/images/img-6687-20-281-29.jpg",
       color: "bg-green-light text-coffee-dark",
     },
     {
@@ -59,7 +59,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
       title: process.hulling.title,
       description: process.hulling.description,
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7542DF3B-F941-4D50-84B4-EC891F3A162F.JPG-33jMlppf20WtSTZd0f7PEspXt8WU0z.jpeg",
+        "/images/7542df3b-f941-4d50-84b4.jpeg",
       color: "bg-bean-light text-coffee-dark",
     },
     {
@@ -67,14 +67,14 @@ export default function ProcessSection({ dict }: { dict: any }) {
       title: process.sorting.title,
       description: process.sorting.description,
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AC491691-4757-4A92-9652-87555E6039FC.JPG-ROZcB4RC7JxO2vwJkF7qlQwLbX3H7l.jpeg",
+        "/images/ac491691-4757-4a92-9652.jpeg",
       color: "bg-bean-green text-white",
     },
     {
       icon: <Award className="h-8 w-8" />,
       title: process.grading.title,
       description: process.grading.description,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6684-5tZAEfcaxVeO3T3mkbBcu4R7mLatih.jpg",
+      image: "/images/img-6684.jpg",
       color: "bg-coffee-light text-white",
     },
     {
@@ -82,7 +82,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
       title: process.packaging.title,
       description: process.packaging.description,
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7542DF3B-F941-4D50-84B4-EC891F3A162F.JPG-cGU3QJcEvc12BDAo1GuLMGgq9qfyk1.jpeg", // Updated packaging step image
+        "/images/7542df3b-f941-4d50-84b4.jpeg", // Updated packaging step image
       color: "bg-coffee-medium text-white",
     },
     {
@@ -90,7 +90,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
       title: process.export.title,
       description: process.export.description,
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20240625_154204-1Y4janR08nLpE1kZrftsGGeC84yHzd.jpg",
+        "/images/20240625-154204.jpg",
       color: "bg-coffee-dark text-white",
     },
   ]
@@ -336,15 +336,15 @@ export default function ProcessSection({ dict }: { dict: any }) {
         </div>
 
         {/* Process Content */}
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col gap-8 items-center">
           <AnimatePresence mode="wait">
             <motion.div
               key={`image-${activeStep}`}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.3 }}
-              className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden order-2 md:order-1 shadow-md"
+              className="relative h-[300px] md:h-[400px] w-full max-w-2xl rounded-lg overflow-hidden shadow-md"
               role="tabpanel"
               id={`process-panel-${activeStep}`}
               aria-labelledby={`process-tab-${activeStep}`}
@@ -370,13 +370,13 @@ export default function ProcessSection({ dict }: { dict: any }) {
           <AnimatePresence mode="wait">
             <motion.div
               key={`content-${activeStep}`}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="order-1 md:order-2"
+              className="w-full max-w-2xl text-center"
             >
-              <div className="flex items-center gap-4 mb-4">
+              <div className="flex flex-col items-center gap-4 mb-4">
                 <div
                   className={cn(
                     "w-12 h-12 rounded-full flex items-center justify-center",
@@ -394,7 +394,7 @@ export default function ProcessSection({ dict }: { dict: any }) {
                 {processSteps[activeStep].description}
               </p>
 
-              <nav className="flex justify-between mt-8" aria-label="Process navigation">
+              <nav className="flex justify-center gap-4 mt-8" aria-label="Process navigation">
                 <Button
                   variant="outline"
                   onClick={prevStep}
