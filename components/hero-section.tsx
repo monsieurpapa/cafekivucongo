@@ -18,31 +18,31 @@ export default function HeroSection({ lang, dict }: { lang: string; dict: any })
   // All the images from your coffee processing operation
   const carouselImages = [
     {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6687-DjoBgTJpBPezD2l1JVzGfeQuNUqjU4.jpg",
+      src: "/images/img-6687.jpg",
       alt: "Coffee beans drying with scenic Kivu lake view",
     },
     {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20240625_154204-1Y4janR08nLpE1kZrftsGGeC84yHzd.jpg",
+      src: "/images/20240625-154204.jpg",
       alt: "Cafe Kivu Congo team in processing facility",
     },
     {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/53612CA4-3C9D-490E-B4DB-8F77CFA720AF.JPG-15JodBGXRMsFi0dvYenpgJD7PybDs8.jpeg",
+      src: "/images/53612ca4-3c9d-490e-b4db.jpeg",
       alt: "Large-scale coffee drying beds on hillside",
     },
     {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AC491691-4757-4A92-9652-87555E6039FC.JPG-ROZcB4RC7JxO2vwJkF7qlQwLbX3H7l.jpeg",
+      src: "/images/ac491691-4757-4a92-9652.jpeg",
       alt: "Workers sorting coffee beans for quality control",
     },
     {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6684-5tZAEfcaxVeO3T3mkbBcu4R7mLatih.jpg",
+      src: "/images/img-6684.jpg",
       alt: "Quality inspector examining green coffee beans",
     },
     {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6687%20%281%29-UfuQMEAwbPUSneoKjfhqzHoM7a7Si4.jpg",
+      src: "/images/img-6687-20-281-29.jpg",
       alt: "Coffee beans drying process with mountain backdrop",
     },
     {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7542DF3B-F941-4D50-84B4-EC891F3A162F.JPG-33jMlppf20WtSTZd0f7PEspXt8WU0z.jpeg",
+      src: "/images/7542df3b-f941-4d50-84b4.jpeg",
       alt: "Premium Arabica coffee from Democratic Republic of Congo",
     },
   ]
@@ -89,18 +89,18 @@ export default function HeroSection({ lang, dict }: { lang: string; dict: any })
     <section id="home" className="relative py-20 md:py-28 overflow-hidden">
       <div className="absolute inset-0 z-0 section-green-light coffee-pattern natural-texture"></div>
       <div className="container relative z-10">
-        <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
+        <div className="flex flex-col gap-8 md:gap-12 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-4 text-center max-w-2xl"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-coffee-900 dark:text-coffee-50">
               {hero.title}
             </h1>
             <p className="text-xl text-coffee-700 dark:text-coffee-300">{hero.subtitle}</p>
-            <div className="mt-4">
+            <div className="mt-4 flex justify-center">
               <Button
                 asChild
                 className="bg-coffee-700 hover:bg-coffee-600 text-white dark:bg-accent-caramel dark:hover:bg-accent-caramel/90 dark:text-coffee-900 shadow-lg hover:shadow-xl transition-all duration-300"
@@ -113,10 +113,10 @@ export default function HeroSection({ lang, dict }: { lang: string; dict: any })
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-lg"
+            className="relative h-[300px] md:h-[400px] w-full max-w-2xl rounded-lg overflow-hidden shadow-lg"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >

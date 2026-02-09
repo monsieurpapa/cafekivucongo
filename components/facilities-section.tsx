@@ -10,7 +10,7 @@ export default function FacilitiesSection({ dict }: { dict: any }) {
       title: "Modern Processing Facility",
       description: "Our state-of-the-art deparchment factory features advanced equipment and quality control systems.",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2025-08-19-21-47-29-Y3ALKlEGzTJp8GB7jso3XAl5s4luY1.jpg",
+        "/images/photo-2025-08-19-21-47-29.jpg",
       alt: "Cafe Kivu Congo coffee deparchment factory exterior with red accent panels",
     },
     {
@@ -18,7 +18,7 @@ export default function FacilitiesSection({ dict }: { dict: any }) {
       description:
         "Export-ready coffee packaged in branded jute bags with full traceability and quality certification.",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2025-08-19-21-52-36%20%281%29-pZ1hHFICYq7c1ZyhFnbUD655mSuNBS.jpg",
+        "/images/photo-2025-08-19-21-52-36-20-281-29.jpg",
       alt: "Cafe Kivu Congo branded jute coffee bag with leopard logo showing Arabica Grade 4 coffee",
     },
     {
@@ -26,14 +26,14 @@ export default function FacilitiesSection({ dict }: { dict: any }) {
       description:
         "Container loading facilities for international shipping with proper documentation and quality assurance.",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2025-08-19-21-52-36%20%282%29-Kb95OluuU6GLc5SsnAlHGTDDIkkzep.jpg",
+        "/images/photo-2025-08-19-21-52-36-20-282-29.jpg",
       alt: "Coffee bags stacked in shipping container ready for export",
     },
     {
       title: "Quality Infrastructure",
       description: "Multi-level facility designed for efficient workflow from receiving to export preparation.",
       image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2025-08-19-21-47-04-2k47tn3U5Lp4EKQHW8y16yhgtRC1ic.jpg",
+        "/images/photo-2025-08-19-21-47-04.jpg",
       alt: "Two-story coffee processing facility with systematic workflow design",
     },
   ]
@@ -97,10 +97,10 @@ export default function FacilitiesSection({ dict }: { dict: any }) {
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-xl font-bold mb-2">{facility.title}</h3>
-                  <p className="text-sm opacity-90">{facility.description}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-xl font-bold mb-2 text-white">{facility.title}</h3>
+                  <p className="text-sm text-white/95">{facility.description}</p>
                 </div>
               </div>
             </motion.div>

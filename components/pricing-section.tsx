@@ -47,7 +47,7 @@ export default function PricingSection({ dict }: { dict: any }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-16 max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-coffee-900 dark:text-coffee-50 mb-4">{pricing.title}</h2>
           <p className="text-coffee-700 dark:text-coffee-200 text-lg max-w-2xl mx-auto">{pricing.subtitle}</p>

@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /en
+Allow: /fr
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+Sitemap: https://cafekivucongo.vercel.app/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Priority: high
+Crawl-delay: 0

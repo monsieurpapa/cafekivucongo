@@ -55,16 +55,16 @@ export default function EquipmentSection({ dict }: { dict: any }) {
           <p className="text-coffee-700 dark:text-coffee-200 text-lg max-w-2xl mx-auto">{equipment.subtitle}</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col gap-12 items-center">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="relative h-[400px] rounded-lg overflow-hidden order-2 md:order-1 organic-shadow"
+            className="relative h-[400px] w-full max-w-2xl rounded-lg overflow-hidden organic-shadow"
           >
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PHOTO-2025-08-19-21-45-40-FtfymbftEBCYcaBldX0ISf1kRJuv6R.jpg"
+              src="/images/photo-2025-08-19-21-45-40.jpg"
               alt="Cafe Kivu Congo coffee deparchment factory facility exterior"
               fill
               className="object-cover"
@@ -77,11 +77,11 @@ export default function EquipmentSection({ dict }: { dict: any }) {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, staggerChildren: 0.1, delayChildren: 0.3 }}
-            className="space-y-8 order-1 md:order-2"
+            className="space-y-8 w-full max-w-2xl"
           >
             {equipmentItems.map((item, index) => (
               <motion.div
