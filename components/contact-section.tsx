@@ -72,7 +72,8 @@ export default function ContactSection({ dict }: { dict: any }) {
                   required
                   aria-required="true"
                   aria-describedby="name-description"
-                  className="border-coffee-300 focus:border-coffee-500 dark:border-coffee-700 dark:focus:border-coffee-500 bg-white dark:bg-coffee-800 text-coffee-900 dark:text-coffee-50"
+                  className="border-coffee-300 focus:border-coffee-500 focus:ring-2 focus:ring-coffee-200 dark:border-coffee-600 dark:focus:border-accent-caramel dark:focus:ring-accent-caramel/30 bg-white dark:bg-coffee-800 text-coffee-900 dark:text-coffee-50 placeholder-coffee-400 dark:placeholder-coffee-500"
+                  placeholder="Full name"
                 />
                 <span id="name-description" className="sr-only">
                   Enter your full name
@@ -92,7 +93,8 @@ export default function ContactSection({ dict }: { dict: any }) {
                   required
                   aria-required="true"
                   aria-describedby="email-description"
-                  className="border-coffee-300 focus:border-coffee-500 dark:border-coffee-700 dark:focus:border-coffee-500 bg-white dark:bg-coffee-800 text-coffee-900 dark:text-coffee-50"
+                  className="border-coffee-300 focus:border-coffee-500 focus:ring-2 focus:ring-coffee-200 dark:border-coffee-600 dark:focus:border-accent-caramel dark:focus:ring-accent-caramel/30 bg-white dark:bg-coffee-800 text-coffee-900 dark:text-coffee-50 placeholder-coffee-400 dark:placeholder-coffee-500"
+                  placeholder="Email address"
                 />
                 <span id="email-description" className="sr-only">
                   Enter your email address
@@ -137,7 +139,8 @@ export default function ContactSection({ dict }: { dict: any }) {
                 rows={5}
                 aria-required="true"
                 aria-describedby="message-description"
-                className="border-coffee-300 focus:border-coffee-500 dark:border-coffee-700 dark:focus:border-coffee-500 bg-white dark:bg-coffee-800 text-coffee-900 dark:text-coffee-50"
+                className="border-coffee-300 focus:border-coffee-500 focus:ring-2 focus:ring-coffee-200 dark:border-coffee-600 dark:focus:border-accent-caramel dark:focus:ring-accent-caramel/30 bg-white dark:bg-coffee-800 text-coffee-900 dark:text-coffee-50 placeholder-coffee-400 dark:placeholder-coffee-500 resize-none"
+                placeholder="Your message"
               />
               <span id="message-description" className="sr-only">
                 Enter your message
@@ -146,7 +149,7 @@ export default function ContactSection({ dict }: { dict: any }) {
 
             <Button
               type="submit"
-              className="w-full bg-coffee-dark hover:bg-coffee-medium text-white dark:bg-coffee-medium dark:hover:bg-coffee-dark"
+              className="w-full bg-coffee-700 hover:bg-coffee-600 text-white dark:bg-accent-caramel dark:hover:bg-accent-caramel/90 dark:text-coffee-900 transition-all duration-300 shadow-md hover:shadow-lg"
               disabled={isSubmitting}
               aria-busy={isSubmitting}
             >

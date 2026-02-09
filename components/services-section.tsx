@@ -3,6 +3,7 @@
 import { Coffee, Package, Truck, LineChart, Warehouse, Filter, SlidersHorizontal, Ship } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { motion } from "framer-motion"
+import { cn } from "@/lib/utils"
 
 export default function ServicesSection({ dict }: { dict: any }) {
   const { services } = dict
@@ -77,12 +78,12 @@ export default function ServicesSection({ dict }: { dict: any }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12 organic-text"
+          className="text-center mb-16 organic-text max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-coffee-900 dark:text-coffee-50 mb-4 organic-title">
             {services.title}
           </h2>
-          <p className="text-coffee-700 dark:text-coffee-200 text-lg max-w-2xl mx-auto organic-subtitle">
+          <p className="text-coffee-700 dark:text-coffee-200 text-lg organic-subtitle">
             {services.subtitle}
           </p>
         </motion.div>
@@ -92,7 +93,7 @@ export default function ServicesSection({ dict }: { dict: any }) {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 organic-grid"
+          className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 organic-grid max-w-7xl mx-auto"
         >
           {serviceItems.map((item, index) => (
             <motion.div key={index} variants={item}>

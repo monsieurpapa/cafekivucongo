@@ -88,7 +88,7 @@ export default function Navbar({ lang, dict }: { lang: string; dict: any }) {
             href={`/${lang}#home`}
             onClick={(e) => scrollToSection(e, "home")}
             className={cn(
-              "text-base font-medium tracking-wide transition-colors hover:text-coffee-700 dark:hover:text-coffee-300 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-caramel focus-visible:ring-offset-2 rounded-md px-1 text-coffee-600 dark:text-coffee-400",
+              "text-base font-medium tracking-wide transition-colors hover:text-coffee-700 dark:hover:text-coffee-300 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-caramel focus-visible:ring-offset-2 rounded-md px-1 py-2 text-coffee-600 dark:text-coffee-400 whitespace-nowrap",
               mounted && activeSection === "home" && "text-coffee-900 dark:text-coffee-50 font-semibold",
             )}
             aria-current={mounted && activeSection === "home" ? "page" : undefined}
