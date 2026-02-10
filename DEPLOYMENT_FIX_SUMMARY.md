@@ -35,24 +35,24 @@
 ## Configuration Changes
 
 ### package.json
-```json
+\`\`\`json
 {
   "engines": {
     "node": ">=18.17.0",
     "npm": ">=10.0.0"
   }
 }
-```
+\`\`\`
 
 ### vercel.json
-```json
+\`\`\`json
 {
   "buildCommand": "npm run build",
   "installCommand": "npm install --legacy-peer-deps --no-audit --no-fund",
   "framework": "nextjs",
   "packageManager": "npm@10"
 }
-```
+\`\`\`
 
 ### next.config.mjs
 - Image optimization enabled with WebP and AVIF formats
@@ -74,9 +74,9 @@
 
 The website is now production-ready and should deploy successfully to Vercel.
 
-```bash
+\`\`\`bash
 # To deploy:
 vercel deploy --prod
-```
+\`\`\`
 
 Or push to GitHub and let Vercel auto-deploy.

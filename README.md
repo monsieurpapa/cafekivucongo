@@ -48,7 +48,7 @@ A modern, fully internationalized (English/French) website for Cafe Kivu Congo, 
 
 ### Installation
 
-```bash
+\`\`\`bash
 # Clone the repository
 git clone <repository-url>
 
@@ -60,7 +60,7 @@ cp .env.example .env.local
 
 # Start development server
 npm run dev
-```
+\`\`\`
 
 Visit `http://localhost:3000` to see the development version.
 
@@ -72,20 +72,20 @@ See `.env.example` for available configuration options. Currently, all features 
 
 ### Build
 
-```bash
+\`\`\`bash
 npm run build
 npm start
-```
+\`\`\`
 
 ### Deploy to Vercel
 
-```bash
+\`\`\`bash
 # Using Vercel CLI
 vercel deploy --prod
 
 # Or directly from GitHub
 # Push to main branch and Vercel will auto-deploy
-```
+\`\`\`
 
 The site is configured for automatic deployment via Vercel with the following settings:
 - Build command: `next build`

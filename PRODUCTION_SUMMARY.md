@@ -60,7 +60,7 @@ The Cafe Kivu Congo website has been fully optimized and configured for producti
 
 ## File Structure
 
-```
+\`\`\`
 project/
 ├── app/
 │   ├── [lang]/
@@ -99,12 +99,12 @@ project/
 ├── README.md                 # User documentation
 ├── BUILD.md                  # Build instructions
 └── PRODUCTION_CHECKLIST.md  # Deployment checklist
-```
+\`\`\`
 
 ## Deployment Instructions
 
 ### Quick Start
-```bash
+\`\`\`bash
 # 1. Install dependencies
 npm install
 
@@ -113,7 +113,7 @@ npm run build
 
 # 3. Deploy to Vercel
 vercel deploy --prod
-```
+\`\`\`
 
 ### Via GitHub
 1. Push code to main branch
