@@ -27,8 +27,6 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
-  optimizeFonts: true,
-  swcMinify: true,
   reactStrictMode: true,
 }
 

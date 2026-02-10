@@ -10,8 +10,8 @@ import SkipNav from "@/components/skip-nav"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
-  const lang = params?.lang || defaultLanguage
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params
   const isEnglish = lang === 'en'
 
   return {
@@ -71,15 +71,15 @@ export async function generateStaticParams() {
   return supportedLanguages.map((lang) => ({ lang }))
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode
-  params: { lang: string }
+  params: Promise<{ lang: string }>
 }) {
-  // Use a default language if params.lang is undefined
-  const lang = params?.lang || defaultLanguage
+  // Await params as required in Next.js 15
+  const { lang } = await params
 
   return (
     <html lang={lang} suppressHydrationWarning>

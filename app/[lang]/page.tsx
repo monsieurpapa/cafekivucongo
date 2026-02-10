@@ -14,9 +14,9 @@ import PricingSection from "@/components/pricing-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 
-export default async function Home({ params }: { params: { lang: string } }) {
-  // Use default language if params.lang is undefined
-  const lang = params?.lang || defaultLanguage
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
+  // Await params as required in Next.js 15
+  const { lang } = await params
   const dict = await getDictionary(lang as any)
 
   return (
