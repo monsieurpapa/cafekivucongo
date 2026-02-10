@@ -136,6 +136,7 @@ export default function HeroSection({ lang, dict }: { lang: string; dict: any })
                   fill
                   className="object-cover"
                   priority={currentImageIndex === 0}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               </motion.div>
