@@ -78,7 +78,7 @@
 ## Deployment Steps
 
 ### 1. Pre-Deployment
-```bash
+\`\`\`bash
 # Install dependencies
 npm install
 
@@ -87,7 +87,7 @@ npm run build
 
 # Test production build locally
 npm start
-```
+\`\`\`
 
 ### 2. Environment Variables
 Set in Vercel dashboard:

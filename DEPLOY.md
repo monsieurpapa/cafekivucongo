@@ -9,14 +9,14 @@ Your website is fully production-ready. Follow these steps to deploy.
 Vercel is the platform built by the creators of Next.js. It's the easiest option.
 
 ### Step 1: Install Vercel CLI
-```bash
+\`\`\`bash
 npm i -g vercel
-```
+\`\`\`
 
 ### Step 2: Deploy
-```bash
+\`\`\`bash
 vercel deploy --prod
-```
+\`\`\`
 
 Or directly from the browser:
 1. Go to https://vercel.com
@@ -66,16 +66,16 @@ Click "Deploy" and wait 2-3 minutes.
 ### Using DigitalOcean, Linode, or Similar
 
 #### Step 1: Deploy Node.js Application
-```bash
+\`\`\`bash
 # Build the project
 npm run build
 
 # Start production server
 npm start
-```
+\`\`\`
 
 #### Step 2: Use PM2 for Process Management
-```bash
+\`\`\`bash
 npm install -g pm2
 
 # Start app with PM2
@@ -84,10 +84,10 @@ pm2 start npm --name "cafekivucongo" -- start
 # Make it restart on reboot
 pm2 startup
 pm2 save
-```
+\`\`\`
 
 #### Step 3: Set up Nginx as Reverse Proxy
-```nginx
+\`\`\`nginx
 server {
     listen 80;
     server_name your-domain.com;
@@ -101,12 +101,12 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
 }
-```
+\`\`\`
 
 #### Step 4: Enable SSL (Free with Let's Encrypt)
-```bash
+\`\`\`bash
 sudo certbot certonly --webroot -w /var/www/html -d your-domain.com
-```
+\`\`\`
 
 ---
 
@@ -121,15 +121,15 @@ If using Vercel, update your domain's DNS:
 1. In Vercel dashboard: Settings > Domains
 2. Add your domain
 3. Update your registrar's nameservers to:
-   ```
+   \`\`\`
    ns1.vercel-dns.com
    ns2.vercel-dns.com
-   ```
+   \`\`\`
 
 Or point to Vercel IP (if A record):
-```
+\`\`\`
 76.76.19.132
-```
+\`\`\`
 
 ### Step 3: Wait for DNS Propagation
 Usually 24 hours, but can be instant.
@@ -148,10 +148,10 @@ Usually 24 hours, but can be instant.
 ### For Self-Hosted
 
 Create `.env.production`:
-```
+\`\`\`
 NODE_ENV=production
 NEXT_PUBLIC_APP_URL=https://your-domain.com
-```
+\`\`\`
 
 ---
 
@@ -212,13 +212,13 @@ For Vercel:
 ## Troubleshooting
 
 ### Site Won't Load
-```bash
+\`\`\`bash
 # Check if build succeeds locally
 npm run build
 npm start
 
 # Visit http://localhost:3000
-```
+\`\`\`
 
 ### Slow Performance
 - Check Lighthouse score (https://pagespeed.web.dev/)

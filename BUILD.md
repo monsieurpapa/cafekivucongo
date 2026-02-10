@@ -3,7 +3,7 @@
 ## Local Development
 
 ### Setup
-```bash
+\`\`\`bash
 # Install dependencies
 npm install
 
@@ -12,12 +12,12 @@ cp .env.example .env.local
 
 # Start development server
 npm run dev
-```
+\`\`\`
 
 Development server runs at `http://localhost:3000`
 
 ### Development Commands
-```bash
+\`\`\`bash
 # Start dev server
 npm run dev
 
@@ -29,14 +29,14 @@ npm run build
 
 # Start production server
 npm start
-```
+\`\`\`
 
 ## Production Build
 
 ### Building
-```bash
+\`\`\`bash
 npm run build
-```
+\`\`\`
 
 The build process:
 1. Compiles TypeScript
@@ -51,10 +51,10 @@ The build process:
 - `public/`: Static assets (images, robots.txt, etc.)
 
 ### Local Production Testing
-```bash
+\`\`\`bash
 npm run build
 npm start
-```
+\`\`\`
 
 Then visit `http://localhost:3000`
 
@@ -63,10 +63,10 @@ Then visit `http://localhost:3000`
 ### Option 1: Vercel (Recommended)
 
 #### Quick Deploy
-```bash
+\`\`\`bash
 npm i -g vercel
 vercel deploy --prod
-```
+\`\`\`
 
 #### GitHub Integration (Auto-Deploy)
 1. Push repository to GitHub
@@ -82,17 +82,17 @@ vercel deploy --prod
 ### Option 2: Self-Hosted
 
 #### Docker (Recommended)
-```bash
+\`\`\`bash
 docker build -t cafekivucongo .
 docker run -p 3000:3000 cafekivucongo
-```
+\`\`\`
 
 #### Traditional Node.js Server
-```bash
+\`\`\`bash
 npm install
 npm run build
 npm start
-```
+\`\`\`
 
 Set environment variables:
 - NODE_ENV=production
@@ -112,11 +112,11 @@ Set environment variables:
 - Tree-shaking unused code
 
 ### Caching
-```
+\`\`\`
 Static content (images): 1 year
 JavaScript: 1 week
 HTML: No cache (revalidates)
-```
+\`\`\`
 
 ## Environment Variables
 
@@ -164,7 +164,7 @@ The build process ensures:
 ## CI/CD Integration
 
 ### GitHub Actions Example
-```yaml
+\`\`\`yaml
 name: Deploy
 on:
   push:
@@ -186,7 +186,7 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-```
+\`\`\`
 
 ## Performance Metrics
 
@@ -205,10 +205,10 @@ Track these metrics in production:
 3. Click "Promote to Production"
 
 ### Git Rollback
-```bash
+\`\`\`bash
 git revert <commit-hash>
 git push origin main
-```
+\`\`\`
 
 ## Support
 
