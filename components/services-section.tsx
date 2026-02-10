@@ -61,7 +61,7 @@ export default function ServicesSection({ dict }: { dict: any }) {
     },
   }
 
-  const item = {
+  const itemVariant = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 },
   }
@@ -95,16 +95,16 @@ export default function ServicesSection({ dict }: { dict: any }) {
           viewport={{ once: true, margin: "-100px" }}
           className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 organic-grid max-w-7xl mx-auto"
         >
-          {serviceItems.map((item, index) => (
-            <motion.div key={index} variants={item}>
+          {serviceItems.map((serviceItem, index) => (
+            <motion.div key={index} variants={itemVariant}>
               <Card className="border-bean-light/30 hover:border-accent-caramel/50 dark:border-bean-dark/30 dark:hover:border-accent-caramel/40 transition-all duration-300 h-full hover:shadow-lg glass-effect organic-shadow organic-card">
                 <CardHeader className="pb-2 organic-header">
-                  <div className="mb-2 organic-icon">{item.icon}</div>
-                  <CardTitle className="text-coffee-900 dark:text-coffee-50 organic-title">{item.title}</CardTitle>
+                  <div className="mb-2 organic-icon">{serviceItem.icon}</div>
+                  <CardTitle className="text-coffee-900 dark:text-coffee-50 organic-title">{serviceItem.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="organic-content">
                   <CardDescription className="text-coffee-700 dark:text-coffee-200 text-base organic-description">
-                    {item.description}
+                    {serviceItem.description}
                   </CardDescription>
                 </CardContent>
               </Card>
