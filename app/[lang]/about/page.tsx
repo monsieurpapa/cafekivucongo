@@ -7,8 +7,8 @@ import AboutMission from "@/components/about-mission"
 import AboutTeam from "@/components/about-team"
 import AboutValues from "@/components/about-values"
 
-export async function generateMetadata({ params }: { params: { lang: string } }) {
-  const lang = params?.lang || defaultLanguage
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params
   const dict = await getDictionary(lang as any)
 
   return {
@@ -17,9 +17,9 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   }
 }
 
-export default async function AboutPage({ params }: { params: { lang: string } }) {
-  // Use default language if params.lang is undefined
-  const lang = params?.lang || defaultLanguage
+export default async function AboutPage({ params }: { params: Promise<{ lang: string }> }) {
+  // Await params as required in Next.js 15
+  const { lang } = await params
   const dict = await getDictionary(lang as any)
 
   return (

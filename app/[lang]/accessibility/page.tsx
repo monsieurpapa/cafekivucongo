@@ -3,8 +3,8 @@ import { defaultLanguage } from "@/middleware"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
-export async function generateMetadata({ params }: { params: { lang: string } }) {
-  const lang = params?.lang || defaultLanguage
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params
 
   return {
     title: `Accessibility Statement | Cafe Kivu Congo`,
@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: { params: { lang: string } })
   }
 }
 
-export default async function AccessibilityPage({ params }: { params: { lang: string } }) {
-  const lang = params?.lang || defaultLanguage
+export default async function AccessibilityPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params
   const dict = await getDictionary(lang as any)
 
   return (

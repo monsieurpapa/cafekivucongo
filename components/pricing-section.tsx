@@ -92,7 +92,7 @@ export default function PricingSection({ dict }: { dict: any }) {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
-                    {plan.features.map((feature, i) => (
+                    {plan.features.map((feature: string, i: number) => (
                       <li key={i} className="flex items-start gap-2">
                         <Check className="h-5 w-5 text-coffee-700 dark:text-coffee-300 flex-shrink-0 mt-0.5" />
                         <span className="text-coffee-700 dark:text-coffee-200">{feature}</span>

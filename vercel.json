@@ -1,14 +1,10 @@
 {
-  "name": "Cafe Kivu Congo",
-  "version": 2,
-  "buildCommand": "next build",
+  "buildCommand": "npm run build",
   "devCommand": "next dev",
-  "installCommand": "npm install",
+  "installCommand": "npm install --legacy-peer-deps --no-audit --no-fund",
   "framework": "nextjs",
   "env": {
-    "NODE_ENV": {
-      "value": "production"
-    }
+    "NODE_ENV": "production"
   },
   "headers": [
     {
