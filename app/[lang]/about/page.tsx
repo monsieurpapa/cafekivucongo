@@ -10,10 +10,24 @@ import AboutValues from "@/components/about-values"
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
   const dict = await getDictionary(lang as any)
+  const isEnglish = lang === 'en'
 
   return {
     title: `${dict.about.title} | Cafe Kivu Congo`,
     description: dict.about.subtitle,
+    keywords: isEnglish
+      ? ['about us', 'company mission', 'coffee company', 'Congo', 'team']
+      : ['à propos de nous', 'mission', 'entreprise de café', 'Congo', 'équipe'],
+    openGraph: {
+      title: dict.about.title,
+      description: dict.about.subtitle,
+      url: `https://cafekivucongo.vercel.app/${lang}/about`,
+      type: 'website',
+      locale: isEnglish ? 'en_US' : 'fr_FR',
+    },
+    alternates: {
+      canonical: `https://cafekivucongo.vercel.app/${lang}/about`,
+    },
   }
 }
 
