@@ -192,26 +192,26 @@ export default function ProcessSection({ dict }: { dict: any }) {
         {announceMessage}
       </div>
 
-      <div className="container relative z-10">
+      <div className="container relative z-10 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-12 max-w-3xl"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-bean-dark dark:text-bean-cream mb-4">{process.title}</h2>
-          <p className="text-bean-brown dark:text-bean-light text-lg max-w-2xl mx-auto">{process.subtitle}</p>
+          <p className="text-bean-brown dark:text-bean-light text-lg">{process.subtitle}</p>
         </motion.div>
 
         {/* Desktop Process Timeline */}
-        <div className="hidden md:block mb-16" role="tablist" aria-label="Process steps">
+        <div className="hidden md:block mb-16 w-full max-w-7xl" role="tablist" aria-label="Process steps">
           <div className="relative">
             <div
               className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-green-medium via-bean-light to-coffee-dark -translate-y-1/2 rounded-full"
               aria-hidden="true"
             ></div>
-            <div className="flex justify-between relative">
+            <div className="flex justify-between relative w-full">
               {processSteps.map((step, index) => (
                 <motion.div
                   key={index}

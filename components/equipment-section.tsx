@@ -43,25 +43,25 @@ export default function EquipmentSection({ dict }: { dict: any }) {
   return (
     <section id="equipment" className="py-16 md:py-24 section-brown-light coffee-pattern relative overflow-hidden">
       <div className="natural-texture absolute inset-0"></div>
-      <div className="container relative z-10">
+      <div className="container relative z-10 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-12 max-w-3xl"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-coffee-900 dark:text-coffee-50 mb-4">{equipment.title}</h2>
-          <p className="text-coffee-700 dark:text-coffee-200 text-lg max-w-2xl mx-auto">{equipment.subtitle}</p>
+          <p className="text-coffee-700 dark:text-coffee-200 text-lg">{equipment.subtitle}</p>
         </motion.div>
 
-        <div className="flex flex-col gap-12 items-center">
+        <div className="flex flex-col gap-12 items-center w-full">
           <motion.div
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="relative h-[400px] w-full max-w-2xl rounded-lg overflow-hidden organic-shadow"
+            className="relative h-[400px] w-full max-w-4xl rounded-lg overflow-hidden organic-shadow"
           >
             <Image
               src="/images/photo-2025-08-19-21-45-40.jpg"

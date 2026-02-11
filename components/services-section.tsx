@@ -72,7 +72,7 @@ export default function ServicesSection({ dict }: { dict: any }) {
       className="py-16 md:py-24 section-neutral coffee-pattern relative overflow-hidden organic-styling"
     >
       <div className="natural-texture absolute inset-0"></div>
-      <div className="container relative z-10 organic-container">
+      <div className="container relative z-10 organic-container flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ export default function ServicesSection({ dict }: { dict: any }) {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 organic-grid max-w-7xl mx-auto"
+          className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 organic-grid max-w-7xl w-full"
         >
           {serviceItems.map((serviceItem, index) => (
             <motion.div key={index} variants={itemVariant}>
