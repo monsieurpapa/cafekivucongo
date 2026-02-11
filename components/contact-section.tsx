@@ -33,16 +33,16 @@ export default function ContactSection({ dict }: { dict: any }) {
   return (
     <section id="contact" className="py-16 md:py-24 section-neutral coffee-pattern relative overflow-hidden">
       <div className="natural-texture absolute inset-0"></div>
-      <div className="container relative z-10">
+      <div className="container relative z-10 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-12 max-w-3xl"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-coffee-900 dark:text-coffee-50 mb-4">{contact.title}</h2>
-          <p className="text-coffee-700 dark:text-coffee-200 text-lg max-w-2xl mx-auto">{contact.subtitle}</p>
+          <p className="text-coffee-700 dark:text-coffee-200 text-lg">{contact.subtitle}</p>
         </motion.div>
 
         <motion.div
@@ -50,7 +50,7 @@ export default function ContactSection({ dict }: { dict: any }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="max-w-2xl mx-auto"
+          className="max-w-2xl w-full"
         >
           <form
             onSubmit={handleSubmit}

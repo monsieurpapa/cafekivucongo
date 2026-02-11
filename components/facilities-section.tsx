@@ -64,22 +64,22 @@ export default function FacilitiesSection({ dict }: { dict: any }) {
   return (
     <section id="facilities" className="py-16 md:py-24 section-brown-light coffee-pattern relative overflow-hidden">
       <div className="natural-texture absolute inset-0"></div>
-      <div className="container relative z-10">
+      <div className="container relative z-10 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-12 max-w-3xl"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-coffee-900 dark:text-coffee-50 mb-4">Our Facilities</h2>
-          <p className="text-coffee-700 dark:text-coffee-200 text-lg max-w-2xl mx-auto">
+          <p className="text-coffee-700 dark:text-coffee-200 text-lg">
             Professional coffee deparchment factory equipped for international export
           </p>
         </motion.div>
 
         {/* Image Grid */}
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 mb-16 w-full max-w-5xl">
           {facilities.map((facility, index) => (
             <motion.div
               key={index}
