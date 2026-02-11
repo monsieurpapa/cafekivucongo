@@ -22,12 +22,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       description: isEnglish
         ? 'Our commitment to accessibility'
         : 'Notre engagement pour l\'accessibilité',
-      url: `https://cafekivucongo.vercel.app/${lang}/accessibility`,
+      url: `https://cafekivucongo.com/${lang}/accessibility`,
       type: 'website',
       locale: isEnglish ? 'en_US' : 'fr_FR',
     },
     alternates: {
-      canonical: `https://cafekivucongo.vercel.app/${lang}/accessibility`,
+      canonical: `https://cafekivucongo.com/${lang}/accessibility`,
     },
   }
 }

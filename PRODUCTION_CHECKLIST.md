@@ -93,7 +93,7 @@ npm start
 Set in Vercel dashboard:
 - NODE_ENV=production
 - NEXT_PUBLIC_APP_NAME=Cafe Kivu Congo
-- NEXT_PUBLIC_APP_URL=https://cafekivucongo.vercel.app
+- NEXT_PUBLIC_APP_URL=https://cafekivucongo.com
 
 ### 3. Vercel Deployment
 - Push to main branch (auto-deployment enabled)

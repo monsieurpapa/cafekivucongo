@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cafekivucongo.vercel.app'),
+  metadataBase: new URL('https://cafekivucongo.com'),
   title: {
     default: 'Cafe Kivu Congo - Premium Coffee Transformation Services',
     template: '%s | Cafe Kivu Congo',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   ],
   generator: 'Next.js',
   applicationName: 'Cafe Kivu Congo',
-  authors: [{ name: 'Cafe Kivu Congo', url: 'https://cafekivucongo.vercel.app' }],
+  authors: [{ name: 'Cafe Kivu Congo', url: 'https://cafekivucongo.com' }],
   creator: 'Cafe Kivu Congo',
   publisher: 'Cafe Kivu Congo',
   formatDetection: {
@@ -52,17 +52,17 @@ export const metadata: Metadata = {
   },
   alternates: {
     languages: {
-      en: 'https://cafekivucongo.vercel.app/en',
-      fr: 'https://cafekivucongo.vercel.app/fr',
-      'x-default': 'https://cafekivucongo.vercel.app/en',
+      en: 'https://cafekivucongo.com/en',
+      fr: 'https://cafekivucongo.com/fr',
+      'x-default': 'https://cafekivucongo.com/en',
     },
-    canonical: 'https://cafekivucongo.vercel.app',
+    canonical: 'https://cafekivucongo.com',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
     alternateLocale: ['fr_FR'],
-    url: 'https://cafekivucongo.vercel.app',
+    url: 'https://cafekivucongo.com',
     siteName: 'Cafe Kivu Congo',
     title: 'Cafe Kivu Congo - Premium Coffee Transformation Services',
     description: 'Professional coffee transformation services with ISO certified facilities',

@@ -21,12 +21,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     openGraph: {
       title: dict.about.title,
       description: dict.about.subtitle,
-      url: `https://cafekivucongo.vercel.app/${lang}/about`,
+      url: `https://cafekivucongo.com/${lang}/about`,
       type: 'website',
       locale: isEnglish ? 'en_US' : 'fr_FR',
     },
     alternates: {
-      canonical: `https://cafekivucongo.vercel.app/${lang}/about`,
+      canonical: `https://cafekivucongo.com/${lang}/about`,
     },
   }
 }
