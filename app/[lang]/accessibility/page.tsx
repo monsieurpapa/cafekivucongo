@@ -5,10 +5,30 @@ import Footer from "@/components/footer"
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
+  const isEnglish = lang === 'en'
 
   return {
-    title: `Accessibility Statement | Cafe Kivu Congo`,
-    description: "Our commitment to making our website accessible to everyone",
+    title: isEnglish
+      ? 'Accessibility Statement | Cafe Kivu Congo'
+      : 'Déclaration d\'accessibilité | Cafe Kivu Congo',
+    description: isEnglish
+      ? 'Our commitment to making our website accessible to everyone following WCAG 2.1 standards'
+      : 'Notre engagement pour rendre notre site web accessible à tous',
+    keywords: isEnglish
+      ? ['accessibility', 'WCAG', 'inclusive design', 'web standards']
+      : ['accessibilité', 'WCAG', 'conception inclusive', 'normes web'],
+    openGraph: {
+      title: isEnglish ? 'Accessibility Statement' : 'Déclaration d\'accessibilité',
+      description: isEnglish
+        ? 'Our commitment to accessibility'
+        : 'Notre engagement pour l\'accessibilité',
+      url: `https://cafekivucongo.vercel.app/${lang}/accessibility`,
+      type: 'website',
+      locale: isEnglish ? 'en_US' : 'fr_FR',
+    },
+    alternates: {
+      canonical: `https://cafekivucongo.vercel.app/${lang}/accessibility`,
+    },
   }
 }
 

@@ -1,14 +1,60 @@
+# Cafe Kivu Congo - SEO Robots Configuration
+# Last Updated: 2025-02-11
+
+# Default rules for all crawlers
 User-agent: *
 Allow: /
 Allow: /en
 Allow: /fr
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Disallow private/system directories
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
+Disallow: /private/
+Disallow: /.well-known/
+Disallow: /node_modules/
 
-Sitemap: https://cafekivucongo.vercel.app/sitemap.xml
+# Crawl delay for general bots (in seconds)
+Crawl-delay: 0
 
+# Google Search Bot - Optimized settings
 User-agent: Googlebot
 Allow: /
-Priority: high
 Crawl-delay: 0
+Request-rate: 60/1m
+
+# Bing Search Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Other search engines
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemaps for search engines
+Sitemap: https://cafekivucongo.vercel.app/sitemap.xml
+
+# Site rules
+# Maximum crawl budget per day
+# Crawl budget should be generous for important content
+Request-rate: 0.5/1s
