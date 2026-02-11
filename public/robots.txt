@@ -52,7 +52,7 @@ User-agent: SemrushBot
 Disallow: /
 
 # Sitemaps for search engines
-Sitemap: https://cafekivucongo.vercel.app/sitemap.xml
+Sitemap: https://cafekivucongo.com/sitemap.xml
 
 # Site rules
 # Maximum crawl budget per day

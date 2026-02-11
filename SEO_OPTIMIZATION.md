@@ -173,14 +173,14 @@ This document outlines the SEO optimizations implemented for the Cafe Kivu Congo
 
 ## URL Structure
 ```
-https://cafekivucongo.vercel.app/[lang]/[page]
+https://cafekivucongo.com/[lang]/[page]
 
 Examples:
-- https://cafekivucongo.vercel.app/en (English home)
-- https://cafekivucongo.vercel.app/fr (French home)
-- https://cafekivucongo.vercel.app/en/about
-- https://cafekivucongo.vercel.app/fr/about
-- https://cafekivucongo.vercel.app/en/accessibility
+- https://cafekivucongo.com/en (English home)
+- https://cafekivucongo.com/fr (French home)
+- https://cafekivucongo.com/en/about
+- https://cafekivucongo.com/fr/about
+- https://cafekivucongo.com/en/accessibility
 ```
 
 ## Performance Optimization

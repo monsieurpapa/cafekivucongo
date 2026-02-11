@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const isEnglish = lang === 'en'
 
   return {
-    metadataBase: new URL("https://cafekivucongo.vercel.app"),
+    metadataBase: new URL("https://cafekivucongo.com"),
     title: isEnglish 
       ? "Cafe Kivu Congo - Coffee Transformation Services"
       : "Cafe Kivu Congo - Services de Transformation du Café",
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     keywords: isEnglish 
       ? ["coffee transformation", "green coffee", "coffee roasting", "coffee packaging", "Congo", "Goma", "export"]
       : ["transformation du café", "café vert", "torréfaction", "emballage", "Congo", "Goma", "export"],
-    authors: [{ name: "Cafe Kivu Congo", url: "https://cafekivucongo.vercel.app" }],
+    authors: [{ name: "Cafe Kivu Congo", url: "https://cafekivucongo.com" }],
     creator: "Cafe Kivu Congo",
     robots: "index, follow",
     viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0",
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       description: isEnglish
         ? "Professional coffee transformation services for businesses"
         : "Services professionnels de transformation du café pour les entreprises",
-      url: "https://cafekivucongo.vercel.app",
+      url: "https://cafekivucongo.com",
       siteName: "Cafe Kivu Congo",
       locale: lang === 'en' ? 'en_US' : 'fr_FR',
       type: "website",
@@ -85,11 +85,11 @@ export default async function RootLayout({
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://cafekivucongo.vercel.app',
+    '@id': 'https://cafekivucongo.com',
     'name': 'Cafe Kivu Congo',
     'description': 'Professional coffee transformation services',
-    'url': 'https://cafekivucongo.vercel.app',
-    'logo': 'https://cafekivucongo.vercel.app/placeholder-logo.png',
+    'url': 'https://cafekivucongo.com',
+    'logo': 'https://cafekivucongo.com/placeholder-logo.png',
     'sameAs': [
       'https://www.facebook.com/cafekivucongo',
       'https://twitter.com/CafeKivuCongo',

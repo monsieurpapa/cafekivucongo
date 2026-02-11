@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 const supportedLanguages = ['en', 'fr']
-const baseUrl = 'https://cafekivucongo.vercel.app'
+const baseUrl = 'https://cafekivucongo.com'
 const lastModified = new Date('2025-02-11')
 
 // Define all routes with their SEO properties following Google best practices
