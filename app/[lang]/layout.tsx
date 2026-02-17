@@ -89,7 +89,7 @@ export default async function RootLayout({
     'name': 'Cafe Kivu Congo',
     'description': 'Professional coffee transformation services',
     'url': 'https://cafekivucongo.com',
-    'logo': 'https://cafekivucongo.com/placeholder-logo.png',
+    'logo': 'https://cafekivucongo.com/logo.png',
     'sameAs': [
       'https://www.facebook.com/cafekivucongo',
       'https://twitter.com/CafeKivuCongo',

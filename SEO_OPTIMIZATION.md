@@ -172,7 +172,7 @@ This document outlines the SEO optimizations implemented for the Cafe Kivu Congo
 - [ ] Monitor competitor strategies
 
 ## URL Structure
-```
+\`\`\`
 https://cafekivucongo.com/[lang]/[page]
 
 Examples:
@@ -181,7 +181,7 @@ Examples:
 - https://cafekivucongo.com/en/about
 - https://cafekivucongo.com/fr/about
 - https://cafekivucongo.com/en/accessibility
-```
+\`\`\`
 
 ## Performance Optimization
 
