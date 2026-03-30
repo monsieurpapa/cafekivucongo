@@ -7,6 +7,7 @@
     "specialties": "Specialties",
     "process": "Process",
     "partners": "Partners",
+    "teams": "Our Team",
     "testimonials": "Testimonials",
     "pricing": "Pricing",
     "contact": "Contact"
@@ -241,6 +242,35 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "copyright": "© 2024 Cafe Kivu Congo. All rights reserved."
+  },
+  "teams": {
+    "title": "Our Team",
+    "subtitle": "Dedicated professionals committed to excellence in coffee transformation and international cooperation",
+    "gallery1Title": "Team Collaboration",
+    "gallery2Title": "Global Partnerships",
+    "values": {
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Working together across departments and borders to achieve shared goals and deliver exceptional results"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Pursuing the highest standards in every aspect of our coffee transformation processes and services"
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "Building strong relationships with cooperatives, international partners, and clients for mutual success"
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "Operating with transparency, honesty, and ethical practices in all business dealings and operations"
+      }
+    },
+    "stats": {
+      "team": "Team Members",
+      "experience": "Years of Experience",
+      "commitment": "Commitment to Quality"
+    }
   },
   "accessibility": {
     "themeToggle": "Toggle dark mode",

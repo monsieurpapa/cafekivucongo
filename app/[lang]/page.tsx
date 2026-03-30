@@ -8,6 +8,7 @@ import FacilitiesSection from "@/components/facilities-section"
 import ProcessSection from "@/components/process-section"
 import SpecialtiesSection from "@/components/specialties-section"
 import PartnersSection from "@/components/partners-section"
+import TeamsSection from "@/components/teams-section"
 import InvestmentSection from "@/components/investment-section"
 import TestimonialsSection from "@/components/testimonials-section"
 import PricingSection from "@/components/pricing-section"
@@ -30,6 +31,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         <ProcessSection dict={dict} />
         <SpecialtiesSection dict={dict} />
         <PartnersSection dict={dict} />
+        <TeamsSection dict={dict} />
         <InvestmentSection dict={dict} />
         <TestimonialsSection dict={dict} />
         <PricingSection dict={dict} />

@@ -3,12 +3,13 @@
     "home": "Accueil",
     "about": "À Propos",
     "services": "Services",
-    "equipment": "Équipement",
+    "equipment": "Équipements",
     "specialties": "Spécialités",
     "process": "Processus",
     "partners": "Partenaires",
+    "teams": "Notre Équipe",
     "testimonials": "Témoignages",
-    "pricing": "Tarifs",
+    "pricing": "Tarification",
     "contact": "Contact"
   },
   "hero": {
@@ -241,6 +242,35 @@
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
     "copyright": "© 2024 Cafe Kivu Congo. Tous droits réservés."
+  },
+  "teams": {
+    "title": "Notre Équipe",
+    "subtitle": "Des professionnels dédiés à l'excellence dans la transformation du café et la coopération internationale",
+    "gallery1Title": "Collaboration d'Équipe",
+    "gallery2Title": "Partenariats Mondiaux",
+    "values": {
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Travailler ensemble à travers les départements et les frontières pour atteindre des objectifs communs et fournir des résultats exceptionnels"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Poursuivre les plus hauts standards dans chaque aspect de nos processus et services de transformation du café"
+      },
+      "partnership": {
+        "title": "Partenariat",
+        "description": "Construire des relations solides avec les coopératives, les partenaires internationaux et les clients pour un succès mutuel"
+      },
+      "integrity": {
+        "title": "Intégrité",
+        "description": "Opérer avec transparence, honnêteté et pratiques éthiques dans tous les arrangements commerciaux et opérationnels"
+      }
+    },
+    "stats": {
+      "team": "Membres de l'Équipe",
+      "experience": "Années d'Expérience",
+      "commitment": "Engagement pour la Qualité"
+    }
   },
   "accessibility": {
     "themeToggle": "Basculer en mode sombre",
