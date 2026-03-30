@@ -9,32 +9,26 @@ export default function FacilitiesSection({ dict }: { dict: any }) {
     {
       title: "Modern Processing Facility",
       description: "Our state-of-the-art deparchment factory features advanced equipment and quality control systems.",
-      image:
-        "/images/photo-2025-08-19-21-47-29.jpg",
-      alt: "Cafe Kivu Congo coffee deparchment factory exterior with red accent panels",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_factory-lsWXQO9v8K3rpVZu6o5bFFmfxOPbwM.jpeg",
+      alt: "Cafe Kivu Congo professional coffee processing factory with modern infrastructure",
     },
     {
       title: "Professional Packaging",
-      description:
-        "Export-ready coffee packaged in branded jute bags with full traceability and quality certification.",
-      image:
-        "/images/photo-2025-08-19-21-52-36-20-281-29.jpg",
-      alt: "Cafe Kivu Congo branded jute coffee bag with leopard logo showing Arabica Grade 4 coffee",
+      description: "Export-ready coffee packaged in branded jute bags with full traceability and quality certification.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_export4-noofUVVGciGeLi7aMIClNgyqpUvcgZ.jpeg",
+      alt: "Cafe Kivu Congo arabica coffee Grade 4 in authentic jute sack with leopard logo",
     },
     {
       title: "Export Operations",
-      description:
-        "Container loading facilities for international shipping with proper documentation and quality assurance.",
-      image:
-        "/images/photo-2025-08-19-21-52-36-20-282-29.jpg",
-      alt: "Coffee bags stacked in shipping container ready for export",
+      description: "Container loading facilities for international shipping with proper documentation and quality assurance.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_export3-ae3Ho65nBT9ZWKnEgKPeIzfR030ExA.jpeg",
+      alt: "Coffee bags stacked in shipping container for international export logistics",
     },
     {
-      title: "Quality Infrastructure",
-      description: "Multi-level facility designed for efficient workflow from receiving to export preparation.",
-      image:
-        "/images/photo-2025-08-19-21-47-04.jpg",
-      alt: "Two-story coffee processing facility with systematic workflow design",
+      title: "Warehouse Storage",
+      description: "Climate-controlled warehouse facility for safe storage and preservation of quality coffee inventory.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_entrepot-QNE4TDrOQQx29fpmt95CSLaUUXmpuG.jpeg",
+      alt: "Cafe Kivu Congo warehouse with stacked bags of processed coffee ready for export",
     },
   ]
 

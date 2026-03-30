@@ -2,13 +2,14 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { Play } from "lucide-react"
+import { Play, Building2 } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
 export default function AboutTeam({ dict }: { dict: any }) {
   const { about } = dict
   const [showFounderVideo, setShowFounderVideo] = useState(false)
+  const [showOfficeGallery, setShowOfficeGallery] = useState(false)
 
   const team = [
     {

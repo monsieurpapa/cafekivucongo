@@ -44,7 +44,8 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    border-color: rgb(var(--border));
+    outline-color: rgb(var(--primary));
   }
 
   body {

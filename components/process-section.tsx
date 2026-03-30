@@ -42,55 +42,49 @@ export default function ProcessSection({ dict }: { dict: any }) {
       icon: <Leaf className="h-8 w-8" />,
       title: process.harvesting.title,
       description: process.harvesting.description,
-      image:
-        "/images/53612ca4-3c9d-490e-b4db.jpeg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_cerise-QiVQrKLrP4nf4FalYaXltIIyJferWY.jpeg",
       color: "bg-green-medium text-white",
     },
     {
       icon: <Sun className="h-8 w-8" />,
       title: process.drying.title,
       description: process.drying.description,
-      image:
-        "/images/img-6687-20-281-29.jpg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_drying1-c0LF0UEriHjTFXpbk8WgrpuNEdSaLU.jpeg",
       color: "bg-green-light text-coffee-dark",
     },
     {
       icon: <Filter className="h-8 w-8" />,
       title: process.hulling.title,
       description: process.hulling.description,
-      image:
-        "/images/7542df3b-f941-4d50-84b4.jpeg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_sorting-0uHfmMdKNRLSLbXgpgqBtQODxbjcgE.jpeg",
       color: "bg-bean-light text-coffee-dark",
     },
     {
       icon: <SlidersHorizontal className="h-8 w-8" />,
       title: process.sorting.title,
       description: process.sorting.description,
-      image:
-        "/images/ac491691-4757-4a92-9652.jpeg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_sorting-0uHfmMdKNRLSLbXgpgqBtQODxbjcgE.jpeg",
       color: "bg-bean-green text-white",
     },
     {
       icon: <Award className="h-8 w-8" />,
       title: process.grading.title,
       description: process.grading.description,
-      image: "/images/img-6684.jpg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_export5-plzV7Tq7pLkdZ4ZpRxrCwsSyPOhaph.jpeg",
       color: "bg-coffee-light text-white",
     },
     {
       icon: <Package className="h-8 w-8" />,
       title: process.packaging.title,
       description: process.packaging.description,
-      image:
-        "/images/7542df3b-f941-4d50-84b4.jpeg", // Updated packaging step image
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_export-z0PgImZ4lApA91wF62cBaZQxfnfnk7.jpeg",
       color: "bg-coffee-medium text-white",
     },
     {
       icon: <Ship className="h-8 w-8" />,
       title: process.export.title,
       description: process.export.description,
-      image:
-        "/images/20240625-154204.jpg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_export3-ae3Ho65nBT9ZWKnEgKPeIzfR030ExA.jpeg",
       color: "bg-coffee-dark text-white",
     },
   ]
