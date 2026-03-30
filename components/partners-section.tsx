@@ -12,14 +12,9 @@ export default function PartnersSection({ dict }: { dict: any }) {
   // Partner data with logos
   const partnerItems = [
     {
-      name: "Fairtrade International",
-      logo: "/images/partners/fairtrade-logo.gif",
-      description: partners.fairtrade.description,
-    },
-    {
-      name: "FLOCERT",
-      logo: "/images/partners/flocert-logo.png",
-      description: partners.flocert.description,
+      name: "Touton Group",
+      logo: "/images/partners/touton-logo.png",
+      description: partners.touton.description,
     },
     {
       name: "Global Coffee Platform",
@@ -37,9 +32,14 @@ export default function PartnersSection({ dict }: { dict: any }) {
       description: partners.rainforest.description,
     },
     {
-      name: "UTZ",
-      logo: "/images/partners/utz-logo.png",
-      description: partners.utz.description,
+      name: "SOPACDI",
+      logo: "/images/partners/sopacdi-logo.png",
+      description: partners.sopacdi.description,
+    },
+    {
+      name: "Scoop Maendeleo",
+      logo: "/images/partners/scoop-maendeleo-logo.png",
+      description: partners.scoop.description,
     },
   ]
 

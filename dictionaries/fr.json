@@ -17,6 +17,23 @@
     "subtitle": "De la Fève à la Tasse: Services Professionnels de Transformation du Café",
     "cta": "Découvrir Nos Services"
   },
+  "heroImages": {
+    "title": "Nos Opérations",
+    "subtitle": "Découvrez nos installations de classe mondiale, notre équipe professionnelle et notre engagement envers l'excellence du café",
+    "office": {
+      "title": "Administration et Planification",
+      "description": "Notre équipe dévouée gère chaque aspect de la transformation du café avec précision et expertise"
+    },
+    "tasting": {
+      "title": "Assurance Qualité",
+      "description": "Collaboration internationale sur l'évaluation du café et le contrôle de la qualité grâce à des séances de dégustation professionnelles"
+    },
+    "facility": {
+      "title": "Infrastructure Industrielle",
+      "description": "Entrepôt et installations de transformation ultramodernes conçus pour une transformation optimale du café"
+    },
+    "cta": "Expérience l'Excellence"
+  },
   "services": {
     "title": "Nos Services",
     "subtitle": "Solutions Complètes de Transformation du Café",
@@ -138,11 +155,8 @@
   "partners": {
     "title": "Nos Partenaires",
     "subtitle": "Collaboration avec les Meilleurs de l'Industrie du Café",
-    "fairtrade": {
-      "description": "Une organisation mondiale qui travaille pour garantir de meilleures conditions pour les agriculteurs et les travailleurs."
-    },
-    "flocert": {
-      "description": "Un organisme mondial de certification et de vérification, dont le rôle principal est de certifier indépendamment les produits Fairtrade."
+    "touton": {
+      "description": "Une grande entreprise de négoce et de distribution de café international spécialisée dans l'approvisionnement et l'export de cafés de qualité à la source."
     },
     "gcp": {
       "description": "Une plateforme de durabilité inclusive multi-parties prenantes alignant les activités vers la création d'un secteur du café prospère et durable."
@@ -153,8 +167,11 @@
     "rainforest": {
       "description": "Une organisation internationale à but non lucratif qui œuvre pour la conservation de la biodiversité et la garantie de moyens de subsistance durables."
     },
-    "utz": {
-      "description": "Un programme de certification mondial pour le café responsable et d'autres produits."
+    "sopacdi": {
+      "description": "Une coopérative dédiée à l'organisation et au soutien des agriculteurs caféiculteurs de petite taille en République Démocratique du Congo."
+    },
+    "scoop": {
+      "description": "Une entreprise sociale coopérative promouvant les pratiques agricoles durables de café et le développement communautaire en Afrique de l'Est."
     }
   },
   "testimonials": {

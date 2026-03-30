@@ -2,6 +2,7 @@ import { getDictionary } from "@/lib/dictionary"
 import { defaultLanguage } from "@/middleware"
 import Navbar from "@/components/navbar"
 import HeroSection from "@/components/hero-section"
+import HeroImagesSection from "@/components/hero-images-section"
 import ServicesSection from "@/components/services-section"
 import EquipmentSection from "@/components/equipment-section"
 import FacilitiesSection from "@/components/facilities-section"
@@ -25,6 +26,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <Navbar lang={lang} dict={dict} />
       <main className="flex-1" id="main-content" role="main">
         <HeroSection lang={lang} dict={dict} />
+        <HeroImagesSection dict={dict} />
         <ServicesSection dict={dict} />
         <EquipmentSection dict={dict} />
         <FacilitiesSection dict={dict} />

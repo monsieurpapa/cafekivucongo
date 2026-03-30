@@ -17,6 +17,23 @@
     "subtitle": "From Bean to Cup: Professional Coffee Transformation Services",
     "cta": "Discover Our Services"
   },
+  "heroImages": {
+    "title": "Our Operations",
+    "subtitle": "Discover our world-class facilities, professional team, and commitment to coffee excellence",
+    "office": {
+      "title": "Administration & Planning",
+      "description": "Our dedicated team manages every aspect of coffee transformation with precision and expertise"
+    },
+    "tasting": {
+      "title": "Quality Assurance",
+      "description": "International collaboration on coffee evaluation and quality control through professional tasting sessions"
+    },
+    "facility": {
+      "title": "Industrial Infrastructure",
+      "description": "State-of-the-art warehouse and processing facilities designed for optimal coffee transformation"
+    },
+    "cta": "Experience Excellence"
+  },
   "services": {
     "title": "Our Services",
     "subtitle": "Comprehensive Coffee Transformation Solutions",
@@ -138,11 +155,8 @@
   "partners": {
     "title": "Who We Work With",
     "subtitle": "Our trusted partners in the global coffee industry",
-    "fairtrade": {
-      "description": "A global organization working to secure a better deal for farmers and workers."
-    },
-    "flocert": {
-      "description": "A global certification and verification body, with the main role of independently certifying Fairtrade products."
+    "touton": {
+      "description": "A leading international coffee trading and distribution company specializing in sourcing and exporting quality coffees from origin."
     },
     "gcp": {
       "description": "An inclusive multi-stakeholder sustainability platform aligning the activities towards creating a thriving and sustainable coffee sector."
@@ -153,8 +167,11 @@
     "rainforest": {
       "description": "An international nonprofit organization that works to conserve biodiversity and ensure sustainable livelihoods."
     },
-    "utz": {
-      "description": "A worldwide certification program for responsible coffee and other products."
+    "sopacdi": {
+      "description": "A cooperative dedicated to organizing and supporting smallholder coffee farmers in the Democratic Republic of Congo."
+    },
+    "scoop": {
+      "description": "A social enterprise cooperative promoting sustainable coffee farming practices and community development in East Africa."
     }
   },
   "testimonials": {
