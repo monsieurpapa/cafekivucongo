@@ -1,5 +1,6 @@
 import React from "react"
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
@@ -124,8 +125,45 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': 'https://cafekivucongo.com',
+    'name': 'Cafe Kivu Congo',
+    'description': 'Professional coffee transformation services',
+    'url': 'https://cafekivucongo.com',
+    'logo': 'https://cafekivucongo.com/logo.png',
+    'sameAs': [
+      'https://www.facebook.com/cafekivucongo',
+      'https://twitter.com/CafeKivuCongo',
+      'https://www.instagram.com/cafekivucongo',
+    ],
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Avenue Nyakagozi, Q. Bujovu',
+      'addressLocality': 'Goma',
+      'addressRegion': 'Nord-Kivu',
+      'postalCode': 'DR Congo',
+      'addressCountry': 'CD',
+    },
+    'contact': {
+      '@type': 'ContactPoint',
+      'telephone': '+243997675176',
+      'contactType': 'Customer Service',
+      'email': 'cafekivucongo8@gmail.com',
+    },
+  }
+
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />

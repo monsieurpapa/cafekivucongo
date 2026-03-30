@@ -81,44 +81,9 @@ export default async function RootLayout({
   // Await params as required in Next.js 15
   const { lang } = await params
 
-  // JSON-LD structured data for Organization
-  const organizationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    '@id': 'https://cafekivucongo.com',
-    'name': 'Cafe Kivu Congo',
-    'description': 'Professional coffee transformation services',
-    'url': 'https://cafekivucongo.com',
-    'logo': 'https://cafekivucongo.com/logo.png',
-    'sameAs': [
-      'https://www.facebook.com/cafekivucongo',
-      'https://twitter.com/CafeKivuCongo',
-      'https://www.instagram.com/cafekivucongo',
-    ],
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': 'Avenue Nyakagozi, Q. Bujovu',
-      'addressLocality': 'Goma',
-      'addressRegion': 'Nord-Kivu',
-      'postalCode': 'DR Congo',
-      'addressCountry': 'CD',
-    },
-    'contact': {
-      '@type': 'ContactPoint',
-      'telephone': '+243997675176',
-      'contactType': 'Customer Service',
-      'email': 'cafekivucongo8@gmail.com',
-    },
-  }
-
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-      </head>
       <body className={`${inter.className} coffee-texture`}>
         <SkipNav />
         <ThemeProvider
