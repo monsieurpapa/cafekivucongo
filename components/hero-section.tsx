@@ -18,32 +18,32 @@ export default function HeroSection({ lang, dict }: { lang: string; dict: any })
   // All the images from your coffee processing operation
   const carouselImages = [
     {
-      src: "/images/img-6687.jpg",
-      alt: "Coffee beans drying with scenic Kivu lake view",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_drying1-c0LF0UEriHjTFXpbk8WgrpuNEdSaLU.jpeg",
+      alt: "Cafe Kivu Congo coffee beans drying process with scenic mountain backdrop in Kivu region",
     },
     {
-      src: "/images/20240625-154204.jpg",
-      alt: "Cafe Kivu Congo team in processing facility",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_factory-lsWXQO9v8K3rpVZu6o5bFFmfxOPbwM.jpeg",
+      alt: "Cafe Kivu Congo modern coffee processing factory with ISO-certified infrastructure",
     },
     {
-      src: "/images/53612ca4-3c9d-490e-b4db.jpeg",
-      alt: "Large-scale coffee drying beds on hillside",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_cerise-QiVQrKLrP4nf4FalYaXltIIyJferWY.jpeg",
+      alt: "Fresh red arabica coffee cherries from Democratic Republic of Congo farms",
     },
     {
-      src: "/images/ac491691-4757-4a92-9652.jpeg",
-      alt: "Workers sorting coffee beans for quality control",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_sorting-0uHfmMdKNRLSLbXgpgqBtQODxbjcgE.jpeg",
+      alt: "Professional coffee bean sorting facility with quality control workers",
     },
     {
-      src: "/images/img-6684.jpg",
-      alt: "Quality inspector examining green coffee beans",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_export5-plzV7Tq7pLkdZ4ZpRxrCwsSyPOhaph.jpeg",
+      alt: "Cafe Kivu Congo arabica coffee Grade 4 in branded export sacks ready for international shipping",
     },
     {
-      src: "/images/img-6687-20-281-29.jpg",
-      alt: "Coffee beans drying process with mountain backdrop",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_farmers-Iui4XnoKNstBRWLtY1oJkEgK8Ie4xz.jpeg",
+      alt: "Local farmers in Congo harvesting fresh coffee plants for Cafe Kivu Congo",
     },
     {
-      src: "/images/7542df3b-f941-4d50-84b4.jpeg",
-      alt: "Premium Arabica coffee from Democratic Republic of Congo",
+      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_entrepot-QNE4TDrOQQx29fpmt95CSLaUUXmpuG.jpeg",
+      alt: "Cafe Kivu Congo warehouse storage with stacked bags of processed premium arabica coffee",
     },
   ]
 

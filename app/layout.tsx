@@ -68,6 +68,13 @@ export const metadata: Metadata = {
     description: 'Professional coffee transformation services with ISO certified facilities',
     images: [
       {
+        url: '/logo.png',
+        width: 500,
+        height: 500,
+        alt: 'Cafe Kivu Congo Official Logo',
+        type: 'image/png',
+      },
+      {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
@@ -87,27 +94,20 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-        sizes: '32x32',
-        type: 'image/png',
+        url: '/favicon.ico',
+        sizes: 'any',
+        type: 'image/x-icon',
       },
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-        sizes: '32x32',
+        url: '/logo.png',
         type: 'image/png',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
         sizes: 'any',
       },
     ],
     apple: {
-      url: '/apple-icon.png',
+      url: '/logo.png',
       type: 'image/png',
-      sizes: '180x180',
+      sizes: 'any',
     },
   },
   manifest: '/manifest.json',

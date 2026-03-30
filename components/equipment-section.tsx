@@ -64,15 +64,15 @@ export default function EquipmentSection({ dict }: { dict: any }) {
             className="relative h-[400px] w-full max-w-4xl rounded-lg overflow-hidden organic-shadow"
           >
             <Image
-              src="/images/photo-2025-08-19-21-45-40.jpg"
-              alt="Cafe Kivu Congo coffee deparchment factory facility exterior"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cafekivucongo_machines_2-VeLKRVN6Yv72jZstp5MvfqCsR0MkFJ.jpeg"
+              alt="Cafe Kivu Congo advanced coffee processing machinery and equipment facility with deparchment systems"
               fill
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             <div className="absolute bottom-4 left-4 right-4 text-white">
-              <h3 className="text-xl font-bold mb-1">Modern Processing Facility</h3>
-              <p className="text-sm opacity-90">Professional deparchment and quality control equipment</p>
+              <h3 className="text-xl font-bold mb-1">Advanced Processing Equipment</h3>
+              <p className="text-sm opacity-90">ISO-certified deparchment and quality control systems</p>
             </div>
           </motion.div>
 
