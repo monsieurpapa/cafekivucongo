@@ -45,7 +45,6 @@ export default function HeroImagesSection({ dict }: { dict: any }) {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: 'easeOut',
       },
     },
   }
