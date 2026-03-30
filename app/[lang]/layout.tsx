@@ -83,7 +83,7 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} suppressHydrationWarning>
-      <head>
+      <head />
       <body className={`${inter.className} coffee-texture`}>
         <SkipNav />
         <ThemeProvider
